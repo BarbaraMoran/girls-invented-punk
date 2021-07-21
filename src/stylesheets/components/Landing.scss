@@ -17,16 +17,15 @@
     }
 
     .header__title {
-        display: block;
         font-family: cooper-black-std,serif;
         font-weight: 400;
-        font-style: normal;
         font-size: 50px;
         background-color: yellow;
         color: black;
         width: 800px;
         text-align: center;
         text-transform: uppercase;
+        padding: 15px;
         }
     
     .header__subtitle {
@@ -37,8 +36,7 @@
         width: 800px;
         background-color: fuchsia;
         text-align: center;
-        padding-top: 15px;
-        padding-bottom: 15px;
+        padding: 15px;
     }
 
     .header__nav--options {
@@ -47,6 +45,8 @@
         height: 100px;
         align-items: center;
         justify-content: center;
+        width: 800px;
+        padding: 15px;
 
         .button__player {
             width: 50%;

@@ -7,8 +7,7 @@ import poster from "../../images/poster.jpg";
 const Landing = () => {
   return (
     <header className="landing__header">
-      <span className="header__title">Girls invented Punk, </span>
-      <span className="header__title">not England</span>
+      <h1 className="header__title">Girls invented Punk not England</h1>
       <h2 className="header__subtitle">Punk cards Memory Game</h2>
       <video className="header__background" autoPlay muted loop poster={poster}>
         <source src={videoMix} type="video/mp4" />
