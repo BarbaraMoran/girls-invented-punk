@@ -1,4 +1,4 @@
-.landing__header {
+.landing__main {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     
-    .header__background {
+    .main__background {
         position: fixed;
         min-width: 100%;
         min-height: 100%;
@@ -16,43 +16,87 @@
         z-index: -10;
     }
 
-    .header__title {
-        font-family: cooper-black-std,serif;
-        font-weight: 400;
-        font-size: 50px;
+    .main__container--title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: yellow;
-        color: black;
+        border-top-left-radius: 22px;
+        border-top-right-radius: 22px;
+        border-top: black solid;
+        border-left: black solid;
+        border-right: black solid;
         width: 800px;
-        text-align: center;
-        text-transform: uppercase;
-        padding: 15px;
-        }
+        height: 154px;
+
+        .main__title {
+            font-family: cooper-black-std,serif;
+            font-weight: 400;
+            font-size: 50px;
+            color: black;
+            text-align: center;
+            text-transform: uppercase;
+            }
+    }
+
+
     
-    .header__subtitle {
+    
+    .main__subtitle {
         font-family: cooper-black-std,serif;
         font-weight: 400;
         font-style: normal;
-        font-size: 35px;
+        font-size: 40px;
         width: 800px;
         background-color: fuchsia;
         text-align: center;
-        padding: 15px;
+        padding: 15px 0 20px 0;
+        border-top: black solid;
+        border-left: black solid;
+        border-right: black solid;
     }
 
-    .header__nav--options {
+    .main__nav {
         background-color: fuchsia;
+        border-bottom-left-radius: 22px;
+        border-bottom-right-radius: 22px;
         display: flex;
-        height: 100px;
+        height: 60px;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
         width: 800px;
-        padding: 15px;
+        padding-bottom: 30px;
+        border-left: black solid;
+        border-right: black solid;
+        border-bottom: black solid;
 
-        .button__player {
-            width: 50%;
-            text-align: center;
-            width: 400px;
+        .main__nav--container {
+            background-color: yellow;
+            border-radius: 22px;
+            width: 160px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .button__player {
+                color: black;
+                font-family: 'Manrope', sans-serif;
+                font-size: 25px;
+                width: 100%;
+                text-align: center;
+                
+            }
+
         }
+
+        .main__nav--container:hover {
+            border: solid black;
+            font-weight: bold;
+        }
+
+
+        
     }
 
+ 
 }

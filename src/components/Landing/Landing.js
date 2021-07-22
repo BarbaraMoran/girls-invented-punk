@@ -6,21 +6,27 @@ import poster from "../../images/poster.jpg";
 
 const Landing = () => {
   return (
-    <header className="landing__header">
-      <h1 className="header__title">Girls invented Punk not England</h1>
-      <h2 className="header__subtitle">Punk cards Memory Game</h2>
-      <video className="header__background" autoPlay muted loop poster={poster}>
+    <main className="landing__main">
+      <div className="main__container--title">
+        <h1 className="main__title">Girls invented Punk not England</h1>
+      </div>
+      <h2 className="main__subtitle">The Punk pioneers Game</h2>
+      <nav className="main__nav">
+        <div className="main__nav--container">
+          <Link className="button__player" to="/one-player">
+            One player
+          </Link>
+        </div>
+        <div className="main__nav--container">
+          <Link className="button__player" to="/two-players">
+            Two players
+          </Link>
+        </div>
+      </nav>
+      <video className="main__background" autoPlay muted loop poster={poster}>
         <source src={videoMix} type="video/mp4" />
       </video>
-      <nav className="header__nav--options">
-        <Link className="button__player" to="/one-player">
-          One player
-        </Link>
-        <Link className="button__player" to="/two-players">
-          Two players
-        </Link>
-      </nav>
-    </header>
+    </main>
   );
 };
 
