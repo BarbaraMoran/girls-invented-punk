@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Cards from "./Cards";
+import charactersData from "../../data/onePlayerData.json";
 
 const MainGame1 = () => {
   return (
@@ -9,6 +11,7 @@ const MainGame1 = () => {
           Home
         </Link>
       </nav>
+      <Cards characters={charactersData} />
     </>
   );
 };

@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../../stylesheets/components/Landing.scss";
 import videoMix from "../../images/mix.mp4";
-import poster from "../../images/poster.jpg";
 
 const Landing = () => {
   return (
@@ -23,7 +22,7 @@ const Landing = () => {
           </Link>
         </div>
       </nav>
-      <video className="main__background" autoPlay muted loop poster={poster}>
+      <video className="main__background" autoPlay muted loop>
         <source src={videoMix} type="video/mp4" />
       </video>
     </main>
