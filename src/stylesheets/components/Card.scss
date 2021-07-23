@@ -1,0 +1,46 @@
+.list__item {
+    
+    .item__picture {
+        width: 60px;
+        border-radius: 15px;
+        cursor: pointer;
+        margin: 5px;
+
+        @media all and(min-width: 500px ){
+            width: 90px;
+        }
+        
+        @media all and(min-width: 768px ){
+            width: 108px;
+        }
+
+        @media all and(min-width: 950px ){
+            width: 115px;
+        }
+
+        @media all and(min-width: 1140px ){
+            width: 130px;
+        }
+      
+        @media all and(min-width: 1400px ){
+            width: 150px;
+        }
+
+        @media all and(min-width: 1880px ){
+            width: 160px;
+        }
+      
+    }
+
+//     .item__name {
+//         font-size: 16px;
+//         font-family: 'Manrope', sans-serif;
+//         position: absolute;
+//         z-index: 10;
+//       bottom: 0;
+//       color: white;
+//       font-weight: bold;
+// width: 140px;
+// padding: 5px;
+//     }
+}
