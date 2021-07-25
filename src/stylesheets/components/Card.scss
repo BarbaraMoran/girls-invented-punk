@@ -1,10 +1,19 @@
 .list__item {
-    
+    //background-color:rgb(124, 98, 207);
+    background-color: #ff54f9;
+    background-image: url("https://www.transparenttextures.com/patterns/black-lozenge.png");
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 5px;
+    box-shadow: 2px 2px 10px #666;
+
+
+
     .item__picture {
+        opacity: 0%;
         width: 60px;
         border-radius: 15px;
-        cursor: pointer;
-        margin: 5px;
+    
 
         @media all and(min-width: 500px ){
             width: 90px;

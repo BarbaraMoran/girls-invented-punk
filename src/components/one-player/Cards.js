@@ -3,23 +3,12 @@ import Card from "./Card";
 import "../../stylesheets/components/Cards.scss";
 
 const Cards = (props) => {
-  let resultRandom;
-
-  function getRandomOrder() {
-    resultRandom = props.characters.sort(function () {
-      return 0.5 - Math.random();
-    });
-    return resultRandom;
-  }
-
-  getRandomOrder();
+  const handleCard = () => {
+    props.handleCard();
+  };
 
   const allCharacters = props.characters.map((eachCharacter) => {
-    return (
-      <li key={eachCharacter.id} className="list__item">
-        <Card eachCharacter={eachCharacter} />
-      </li>
-    );
+    return <Card eachCharacter={eachCharacter} handleCard={handleCard} />;
   });
   return (
     <>

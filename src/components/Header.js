@@ -5,13 +5,13 @@ import music from "../audio/girls.mp3";
 const Header = () => {
   return (
     <header className="header">
-      <audio
+      {/* <audio
         className="audio"
         id="audio"
         preload="auto"
         controls
         src={music}
-      ></audio>
+      ></audio> */}
     </header>
   );
 };
