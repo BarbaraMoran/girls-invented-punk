@@ -6,7 +6,11 @@ import charactersData from "../../data/onePlayerData.json";
 
 const MainGame1 = () => {
   const [deckDisposal, setDeckDisposal] = useState([charactersData]);
-  const [characterIsHidden, setCharacterIsHidden] = useState(true);
+  //const [characterIsHidden, setCharacterIsHidden] = useState(true);
+  const [cardSelection1, setcardSelection1] = useState({});
+  const [cardSelection2, setcardSelection2] = useState({});
+  const [cardsSelection, setcardsSelections] = useState([]);
+  const [className, setClassName] = useState("backCard");
 
   useEffect(() => {
     const getRandomOrder = () => {
@@ -18,7 +22,37 @@ const MainGame1 = () => {
     getRandomOrder();
   }, []);
 
-  const handleCard = () => {};
+  const handleCard = (cardInfo) => {
+    //setCharacterIsHidden(false);
+    if (cardsSelection.length === 0) {
+      setcardSelection1(cardInfo);
+      cardsSelection.push(cardInfo);
+      setcardsSelections(cardsSelection);
+    } else if (cardsSelection.length === 1) {
+      setcardSelection2(cardInfo);
+      cardsSelection.push(cardInfo);
+      setcardsSelections(cardsSelection);
+    }
+
+    showCard();
+  };
+
+  const showCard = () => {
+    for (const eachCharacter of deckDisposal) {
+      const checkPickedCards = cardsSelection.find(
+        (selected) => selected.id === eachCharacter.id
+      );
+
+      if (checkPickedCards === undefined) {
+        setClassName("backCard");
+      } else {
+        setClassName("frontCard");
+      }
+    }
+  };
+  console.log(cardSelection1);
+  console.log(cardSelection2);
+  console.log(cardsSelection);
 
   return (
     <>
@@ -30,7 +64,11 @@ const MainGame1 = () => {
       <Cards
         characters={deckDisposal}
         handleCard={handleCard}
-        characterIsHidden={characterIsHidden}
+        cardSelection1={cardSelection1}
+        cardSelection2={cardSelection2}
+        cardsSelection={cardsSelection}
+        className={className}
+        //characterIsHidden={characterIsHidden}
       />
     </>
   );
