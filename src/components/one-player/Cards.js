@@ -3,14 +3,16 @@ import Card from "./Card";
 import "../../stylesheets/components/Cards.scss";
 
 const Cards = (props) => {
-  const allCharacters = props.characters.map((eachCharacter) => {
+  const allCharacters = props.characters.map((eachCharacter, index) => {
     return (
       <Card
-        eachCharacter={eachCharacter}
-        handleCard={props.handleCard}
-        cardsSelection={props.cardsSelection}
-        className={props.className}
-        //characterIsHidden={props.characterIsHidden}
+        key={index}
+        index={eachCharacter.id}
+        name={eachCharacter.name}
+        picture={eachCharacter.picture}
+        getCardInfo={props.getCardInfo}
+        unflippedCards={props.unflippedCards}
+        resolvedCards={props.resolvedCards}
       />
     );
   });

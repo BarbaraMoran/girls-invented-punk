@@ -6,11 +6,11 @@ import charactersData from "../../data/onePlayerData.json";
 
 const MainGame1 = () => {
   const [deckDisposal, setDeckDisposal] = useState([charactersData]);
-  //const [characterIsHidden, setCharacterIsHidden] = useState(true);
-  const [cardSelection1, setcardSelection1] = useState({});
-  const [cardSelection2, setcardSelection2] = useState({});
-  const [cardsSelection, setcardsSelections] = useState([]);
-  const [className, setClassName] = useState("backCard");
+  const [cardSelection1, setCardSelection1] = useState({});
+  const [cardSelection2, setCardSelection2] = useState({});
+  const [cardsSelection, setCardsSelection] = useState([]);
+  const [resolvedCards, setResolvedCards] = useState([]);
+  const [unflippedCards, setUnflippedCards] = useState([]);
 
   useEffect(() => {
     const getRandomOrder = () => {
@@ -22,37 +22,58 @@ const MainGame1 = () => {
     getRandomOrder();
   }, []);
 
-  const handleCard = (cardInfo) => {
-    //setCharacterIsHidden(false);
-    if (cardsSelection.length === 0) {
-      setcardSelection1(cardInfo);
-      cardsSelection.push(cardInfo);
-      setcardsSelections(cardsSelection);
-    } else if (cardsSelection.length === 1) {
-      setcardSelection2(cardInfo);
-      cardsSelection.push(cardInfo);
-      setcardsSelections(cardsSelection);
+  useEffect(() => {
+    checkMatch();
+  }, [setCardSelection2]);
+
+  const getCardInfo = (cardInfo) => {
+    if (
+      cardSelection1.name === cardInfo.name &&
+      cardSelection1.index === cardInfo.index
+    ) {
+      return 0;
+      //estoy dando la vuelta a la misma carta
     }
 
-    showCard();
-  };
-
-  const showCard = () => {
-    for (const eachCharacter of deckDisposal) {
-      const checkPickedCards = cardsSelection.find(
-        (selected) => selected.id === eachCharacter.id
-      );
-
-      if (checkPickedCards === undefined) {
-        setClassName("backCard");
-      } else {
-        setClassName("frontCard");
-      }
+    if (!cardSelection1.name) {
+      setCardSelection1(cardInfo);
+      cardsSelection.push(cardInfo);
+      setCardsSelection(cardsSelection);
+    } else if (!cardSelection2.name) {
+      setCardSelection2(cardInfo);
+      cardsSelection.push(cardInfo);
+      setCardsSelection(cardsSelection);
     }
+    return 1;
   };
+
   console.log(cardSelection1);
   console.log(cardSelection2);
   console.log(cardsSelection);
+  console.log(deckDisposal);
+
+  const checkMatch = () => {
+    if (cardsSelection.length === 2) {
+      const match = cardSelection1.name === cardSelection2.name;
+      match ? resolveCards() : unflipCards();
+    }
+  };
+
+  const resolveCards = () => {
+    setResolvedCards([cardSelection1.index, cardSelection2.index]);
+    resetCardSelection();
+  };
+
+  const unflipCards = () => {
+    setUnflippedCards([cardSelection1.index, cardSelection2.index]);
+    resetCardSelection();
+  };
+
+  const resetCardSelection = () => {
+    setCardSelection1({});
+    setCardSelection2({});
+    setCardsSelection([]);
+  };
 
   return (
     <>
@@ -61,15 +82,14 @@ const MainGame1 = () => {
           Home
         </Link>
       </nav>
-      <Cards
-        characters={deckDisposal}
-        handleCard={handleCard}
-        cardSelection1={cardSelection1}
-        cardSelection2={cardSelection2}
-        cardsSelection={cardsSelection}
-        className={className}
-        //characterIsHidden={characterIsHidden}
-      />
+      <main className="main">
+        <Cards
+          characters={deckDisposal}
+          getCardInfo={getCardInfo}
+          unflippedCards={unflippedCards}
+          resolvedCards={resolvedCards}
+        />
+      </main>
     </>
   );
 };

@@ -1,15 +1,15 @@
 .list__item {
     //background-color:rgb(124, 98, 207);
-    background-color: #ff54f9;
-    background-image: url("../../images/black-lozenge.png");
-    border-radius: 15px;
-    cursor: pointer;
-    margin: 5px;
-    box-shadow: 2px 2px 10px #666;
+    
 
     .item__picture {
         width: 60px;
         border-radius: 15px;
+        cursor: pointer;
+        margin: 5px;
+        box-shadow: 1px 1px 5px #666;
+        background-color: rgb(255, 109, 255);
+
     
 
         @media all and(min-width: 500px ){
@@ -38,14 +38,7 @@
       
     }
 
-    .backCard {
-        opacity: 0%;
-    }
-
-    .frontCard {
-        opacity: 100%;
-    }
-
+   
 //     .item__name {
 //         font-size: 16px;
 //         font-family: 'Manrope', sans-serif;
@@ -57,4 +50,8 @@
 // width: 140px;
 // padding: 5px;
 //     }
+}
+
+.list__item:hover {
+    transform: scale(102%);
 }
