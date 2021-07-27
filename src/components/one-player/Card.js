@@ -11,19 +11,16 @@ const Card = (props) => {
   useEffect(() => {
     if (props.unflippedCards.includes(props.index))
       setTimeout(() => setIsFlipped(false), 1000);
-  }, [props.unflippedCards]);
+  }, [props.unflippedCards]); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
     if (props.resolvedCards.includes(props.index)) {
       setHasEvent(false);
     }
-  }, [props.resolvedCards]);
+  }, [props.resolvedCards]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleCard = (event) => {
-    const result = props.getCardInfo({
-      name: event.currentTarget.dataset.name,
-      index: event.currentTarget.dataset.index,
-    });
+    const result = props.getCardInfo(props.name, props.index);
 
     if (result !== 0) {
       setIsFlipped(!isFlipped);

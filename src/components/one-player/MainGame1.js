@@ -5,55 +5,45 @@ import Cards from "./Cards";
 import charactersData from "../../data/onePlayerData.json";
 
 const MainGame1 = () => {
-  const [deckDisposal, setDeckDisposal] = useState([charactersData]);
+  const [deckDisposal, setDeckDisposal] = useState([]);
   const [cardSelection1, setCardSelection1] = useState({});
   const [cardSelection2, setCardSelection2] = useState({});
-  const [cardsSelection, setCardsSelection] = useState([]);
   const [resolvedCards, setResolvedCards] = useState([]);
   const [unflippedCards, setUnflippedCards] = useState([]);
 
   useEffect(() => {
-    const getRandomOrder = () => {
-      charactersData.sort(function () {
-        return 0.5 - Math.random();
-      });
-      setDeckDisposal(charactersData);
-    };
-    getRandomOrder();
+    charactersData.sort(function () {
+      return 0.5 - Math.random();
+    });
+    setDeckDisposal(charactersData);
   }, []);
 
   useEffect(() => {
     checkMatch();
-  }, [setCardSelection2]);
+  }, [cardSelection2]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  const getCardInfo = (cardInfo) => {
-    if (
-      cardSelection1.name === cardInfo.name &&
-      cardSelection1.index === cardInfo.index
-    ) {
+  const getCardInfo = (name, index) => {
+    if (cardSelection1.name === name && cardSelection1.index === index) {
       return 0;
       //estoy dando la vuelta a la misma carta
     }
 
     if (!cardSelection1.name) {
-      setCardSelection1(cardInfo);
-      cardsSelection.push(cardInfo);
-      setCardsSelection(cardsSelection);
+      setCardSelection1({ name, index });
     } else if (!cardSelection2.name) {
-      setCardSelection2(cardInfo);
-      cardsSelection.push(cardInfo);
-      setCardsSelection(cardsSelection);
+      setCardSelection2({ name, index });
     }
     return 1;
   };
 
   console.log(cardSelection1);
   console.log(cardSelection2);
-  console.log(cardsSelection);
+  console.log(unflippedCards);
+  console.log(resolvedCards);
   console.log(deckDisposal);
 
   const checkMatch = () => {
-    if (cardsSelection.length === 2) {
+    if (cardSelection1.name && cardSelection2.name) {
       const match = cardSelection1.name === cardSelection2.name;
       match ? resolveCards() : unflipCards();
     }
@@ -72,7 +62,6 @@ const MainGame1 = () => {
   const resetCardSelection = () => {
     setCardSelection1({});
     setCardSelection2({});
-    setCardsSelection([]);
   };
 
   return (
