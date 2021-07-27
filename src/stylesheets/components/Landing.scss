@@ -5,6 +5,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: black;
+
+    
+    @media all and(min-width: 1000px) {
+        background-color: transparent;
+
+    }
     
     .main__background {
         position: fixed;
@@ -14,6 +21,7 @@
         left: 50%;
         transform: translateX(-50%) translateY(-50%) ;
         z-index: -10;
+        
     }
 
     .main__container--title {
@@ -26,34 +34,57 @@
         border-top: black solid;
         border-left: black solid;
         border-right: black solid;
-        width: 800px;
-        height: 154px;
+        width: 300px;
+        height: 300px;
+
+
+        @media all and(min-width: 1000px) {
+            width: 800px;
+            height: 154px;
+
+        }
 
         .main__title {
             font-family: cooper-black-std,serif;
-            font-weight: 400;
-            font-size: 50px;
+            font-weight: 200;
+            font-size: 43px;
             color: black;
             text-align: center;
             text-transform: uppercase;
+
+            @media all and(min-width: 1000px) {
+                font-weight: 400;
+                font-size: 50px;
+    
             }
+
+        }
+
+    
     }
-
-
-    
-    
     .main__subtitle {
         font-family: cooper-black-std,serif;
-        font-weight: 400;
+        font-weight: 200;
         font-style: normal;
-        font-size: 40px;
-        width: 800px;
+        font-size: 30px;
+        width: 300px;
         background-color: fuchsia;
         text-align: center;
-        padding: 15px 0 20px 0;
+        padding: 15px 0 10px 0;
         border-top: black solid;
         border-left: black solid;
         border-right: black solid;
+
+
+        @media all and(min-width: 1000px) {
+            font-weight: 400;
+            font-size: 40px;
+            width: 800px;
+            padding: 15px 0 20px 0;
+
+
+        }
+
     }
 
     .main__nav {
@@ -61,14 +92,23 @@
         border-bottom-left-radius: 22px;
         border-bottom-right-radius: 22px;
         display: flex;
+        flex-direction: column;
         height: 60px;
         align-items: center;
-        justify-content: space-around;
-        width: 800px;
-        padding-bottom: 30px;
+        width: 300px;
+        padding-bottom: 60px;
         border-left: black solid;
         border-right: black solid;
         border-bottom: black solid;
+
+        @media all and(min-width: 1000px) {
+            height: 60px;
+            width: 800px;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding-bottom: 40px;
+
+        }
 
         .main__nav--container {
             background-color: yellow;
@@ -78,6 +118,12 @@
             justify-content: center;
             align-items: center;
             border: solid black;
+            margin-top: 10px;
+
+            @media all and(min-width: 1000px) {
+                width: 160px;
+    
+            }
 
             .button__player {
                 color: black;
@@ -86,6 +132,11 @@
                 font-weight: bold;
                 width: 100%;
                 text-align: center;
+
+                @media all and(min-width: 1000px) {
+                    font-size: 25px;
+        
+                }
                 
             }
 

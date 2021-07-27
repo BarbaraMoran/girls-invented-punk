@@ -3,36 +3,40 @@
     
 
     .item__picture {
-        width: 60px;
+        width: 50px;
         border-radius: 15px;
         cursor: pointer;
         margin: 5px;
         box-shadow: 1px 1px 5px #666;
         background-color: rgb(255, 109, 255);
 
+        @media all and(min-width: 375px){
+            width: 60px;
+        }
+
     
 
-        @media all and(min-width: 500px ){
-            width: 90px;
+        @media all and(min-width: 500px){
+            width: 80px;
         }
         
-        @media all and(min-width: 768px ){
+        @media all and(min-width: 768px){
             width: 108px;
         }
 
-        @media all and(min-width: 950px ){
+        @media all and(min-width: 950px){
             width: 115px;
         }
 
-        @media all and(min-width: 1140px ){
+        @media all and(min-width: 1140px){
             width: 130px;
         }
       
-        @media all and(min-width: 1400px ){
+        @media all and(min-width: 1400px){
             width: 150px;
         }
 
-        @media all and(min-width: 1880px ){
+        @media all and(min-width: 1880px){
             width: 160px;
         }
       
