@@ -1,6 +1,79 @@
 .header {
     position: fixed;
-    padding: 15px;
     top: 0;
     left: 0;
+    width: 100vw;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.698);
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 2px 5px #666;
+
+    .audio {
+        display: none;
+        margin-left: 15px;
+        @media all and(min-width:1000px){
+            display: block;
+            height: 30px;
+            width: 120px;
+        }
+    }
+
+    .nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .header__link {
+            color: black;
+            font-family: 'Manrope', sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 20px;
+            text-decoration-line: underline;
+        }
+    
+        .header__link:hover {
+            background-color: rgba(255, 0, 255, 0.404);
+            padding: 2px 3px;
+            text-decoration-line: unset;
+        }
+
+       
+        .social__media {
+            margin-right: 20px;
+
+            .small {
+                margin-right: 15px;
+                font-family: 'Manrope', sans-serif;
+                display: none;
+
+                @media all and(min-width: 1025px) {
+                    display: inline-block;
+                }
+    
+        
+            }
+
+            .sm__link {
+                color: black;
+                margin-right: 13px;
+                font-size: 20px;
+                display: none;
+    
+                @media all and(min-width: 1025px) {
+                    display: inline-block;
+                }
+                
+            }
+    
+        }
+    
+        
+    }
+
+    
+    
+    
 }

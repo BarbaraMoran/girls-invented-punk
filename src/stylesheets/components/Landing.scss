@@ -5,13 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: black;
 
-    
-    @media all and(min-width: 1000px) {
-        background-color: transparent;
-
-    }
     
     .main__background {
         position: fixed;
@@ -21,7 +15,30 @@
         left: 50%;
         transform: translateX(-50%) translateY(-50%) ;
         z-index: -10;
+        display: none;
+
+        @media all and(min-width: 1200px) {
+            display: block;
+    
+        }
         
+    }
+
+    .main__background-min{
+        position: fixed;
+        min-width: 100%;
+        min-height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%) ;
+        z-index: -10;
+
+        @media all and(min-width: 1200px) {
+            display: none;
+            background-color: transparent;
+    
+        }
+
     }
 
     .main__container--title {
@@ -34,29 +51,44 @@
         border-top: black solid;
         border-left: black solid;
         border-right: black solid;
-        width: 300px;
-        height: 300px;
+        width: 280px;
+        height: 240px;
+
+        @media all and(min-width: 400px) {
+            width: 300px;
+            height: 300px;
+
+        }
 
 
         @media all and(min-width: 1000px) {
             width: 800px;
-            height: 154px;
+            height: 180px;
 
         }
 
         .main__title {
             font-family: cooper-black-std,serif;
             font-weight: 200;
-            font-size: 43px;
+            font-size: 40px;
             color: black;
             text-align: center;
             text-transform: uppercase;
+
+            
+            @media all and(min-width: 400px) {
+            font-size: 43px;
+
+            }
+
 
             @media all and(min-width: 1000px) {
                 font-weight: 400;
                 font-size: 50px;
     
             }
+
+
 
         }
 
@@ -67,13 +99,20 @@
         font-weight: 200;
         font-style: normal;
         font-size: 30px;
-        width: 300px;
+        width: 280px;
         background-color: fuchsia;
         text-align: center;
         padding: 15px 0 10px 0;
         border-top: black solid;
         border-left: black solid;
         border-right: black solid;
+
+        
+        @media all and(min-width: 400px) {
+            width: 300px;
+
+        }
+
 
 
         @media all and(min-width: 1000px) {
@@ -95,11 +134,18 @@
         flex-direction: column;
         height: 60px;
         align-items: center;
-        width: 300px;
-        padding-bottom: 60px;
+        width: 280px;
+        padding-bottom: 70px;
         border-left: black solid;
         border-right: black solid;
         border-bottom: black solid;
+
+        
+        @media all and(min-width: 400px) {
+            width: 300px;
+
+        }
+
 
         @media all and(min-width: 1000px) {
             height: 60px;
@@ -119,6 +165,7 @@
             align-items: center;
             border: solid black;
             margin-top: 10px;
+            margin-bottom: 10px;
 
             @media all and(min-width: 1000px) {
                 width: 160px;
