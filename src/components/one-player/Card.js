@@ -10,7 +10,7 @@ const Card = (props) => {
 
   useEffect(() => {
     if (props.unflippedCards.includes(props.index))
-      setTimeout(() => setIsFlipped(false), 1000);
+      setTimeout(() => setIsFlipped(false), 1400);
   }, [props.unflippedCards]); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
@@ -42,6 +42,7 @@ const Card = (props) => {
           <img
             className="item__picture"
             alt={props.name}
+            title={props.name}
             src={props.picture}
             data-name={props.name}
             data-index={props.index}

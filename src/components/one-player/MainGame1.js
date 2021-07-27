@@ -38,8 +38,6 @@ const MainGame1 = () => {
 
   console.log(cardSelection1);
   console.log(cardSelection2);
-  console.log(unflippedCards);
-  console.log(resolvedCards);
   console.log(deckDisposal);
 
   const checkMatch = () => {
