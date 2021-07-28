@@ -6,7 +6,7 @@ import pioneersData from "../../data/pioneersData.json";
 const MainPioneers = () => {
   return (
     <>
-      <PioneersHeader />
+      {/* <PioneersHeader /> */}
       <main className="pioneers__main">
         <h1 className="pioneers__title">Meet the pioneers</h1>
         <List pioneersData={pioneersData} />

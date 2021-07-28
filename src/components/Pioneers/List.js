@@ -6,6 +6,6 @@ const List = (props) => {
     return <Artist eachPioneer={eachPioneer} />;
   });
 
-  return <ul classname="pioneers__list">{allArtists}</ul>;
+  return <ul className="pioneers__list">{allArtists}</ul>;
 };
 export default List;

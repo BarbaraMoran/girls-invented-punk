@@ -64,11 +64,6 @@ const MainGame1 = () => {
 
   return (
     <>
-      <nav>
-        <Link className="home__link" to="/">
-          Home
-        </Link>
-      </nav>
       <main className="main">
         <Cards
           characters={deckDisposal}

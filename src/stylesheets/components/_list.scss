@@ -1,21 +1,7 @@
-.pioneers__main {
-    margin-top: 100px;
+.pioneers__list {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    .pioneers__title {
-        font-family: $fontfamily-title;
-        font-size: 24px;
-        text-transform: uppercase;
-
-        @media all and(min-width: 580px){
-            font-size: 45px;
-        }
-
-        @media all and(min-width: 780px){
-            font-size: 60px;
-        }
-
-    }
+    flex-wrap: wrap;
+    margin: 50px 20px 20px;
+    justify-content: center;
+    gap: 30px;
 }

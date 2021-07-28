@@ -1,13 +1,16 @@
 .pioneers__main {
-    margin-top: 100px;
+    width: 100vw;
+    padding-top: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: $main-color2;
     
     .pioneers__title {
         font-family: $fontfamily-title;
         font-size: 24px;
         text-transform: uppercase;
+        
 
         @media all and(min-width: 580px){
             font-size: 45px;

@@ -2,7 +2,7 @@
   {
   "id": 1,
   "name": "Gaye Advert",
-  "description": "English punk rock musician. Played bass guitar in The Adverts in the late 1970s. One of the 1st female rock stars of the punk rock movement.",
+  "description": "English musician. Played bass guitar in The Adverts in the late 1970s. One of the 1st female stars of the punk rock movement. In 1979, Advert stopped playing bass and disappeared from the British punk scene.",
   "picture": "https://i.ibb.co/F6cV7cH/1-gaye-advert-crop.jpg",
   "music":"",
   "wiki":"https://en.wikipedia.org/wiki/Gaye_Advert"
@@ -10,7 +10,7 @@
   {
   "id": 2,
   "name": "Poly Styrene",
-  "description": "English musician, singer-songwriter, and frontwoman for the punk rock band X-Ray Spex.",
+  "description": "English musician and singer-songwriter. She saw the Sex Pistols perform at the Pier Pavilion Hastings on her nineteenth birthday and decided to form the punk band X-Ray Spex.",
   "picture": "https://i.ibb.co/Xx5y6N0/2-poly-styrene-crop.jpg",
   "music":"",
   "wiki":"https://en.wikipedia.org/wiki/Poly_Styrene"
@@ -18,7 +18,7 @@
   {
   "id": 3,
   "name": "Pauline Murray",
-  "description": "Best known as the lead singer of the punk rock band Penetration, originally formed in 1976.",
+  "description": "Best known as the lead singer of the punk rock band Penetration. In May 1976 the 18-year-old Murray saw the Sex Pistols perform, and she and her Ferryhill comrades became Pistols devotees.",
   "picture": "https://i.ibb.co/xFHR9HX/3-pauline-murray-crop.jpg",
   "music":"",
   "wiki":"https://en.wikipedia.org/wiki/Pauline_Murray"
@@ -27,7 +27,7 @@
   "id": 4,
   "name": "Jordan",
   "description": "English model and actress noted for her work with Vivienne Westwood and the Sex boutique in the Kings Road area of London in the mid-1970s. Her style made her a highly visible icon of the London punk subculture.",
-  "picture": "https://i.ibb.co/3W6gDw5/4-jordan-crop.jpg",
+  "picture": "https://i.ibb.co/YfrfcCm/jordan-crop.jpg",
   "music":"",
   "wiki":"https://en.wikipedia.org/wiki/Pamela_Rooke"
   },
@@ -58,7 +58,7 @@
   {
   "id": 8,
   "name": "Palmolive",
-  "description":  "Palmolive, is a Spanish-born drummer and songwriter who was a member of influential early punk bands. She founded the Slits toward the end of 1976. After leaving that group in 1978, she joined the Raincoats and performed on their first album",
+  "description":  "Palmolive, is a Spanish-born drummer and songwriter who was a member of influential early punk bands. She founded the Slits toward the end of 1976. After leaving that group in 1978, she joined the Raincoats.",
   "picture": "https://i.ibb.co/mqKNpS2/8-palmolive-crop.jpg",
   "music":"",
   "wiki":"https://en.wikipedia.org/wiki/Palmolive_(musician)"
@@ -66,15 +66,16 @@
   {
   "id": 9,
   "name": "Ari Up",
-  "description":  "Ari Up was a German vocalist best known as a member of the English post-punk band The Slits.",
+  "description":  "Ari Up was a German vocalist. In 1976, at the age of 14, Up formed The post-punk band The Slits with drummer Palmolive. She was married with the Sex Pistols' lead singer, John Lydon.",
   "picture": "https://i.ibb.co/9r2NH5p/9-Ari-Up-crop.jpg",
   "music":"",
   "wiki":"https://en.wikipedia.org/wiki/Ari_Up"
   },
+
   {
   "id": 10,
   "name": "Viv Albertine",
-  "description": "Australian-born British musician, singer, songwriter and writer. She is best known as the guitarist for the punk band the Slits. Prior to joining the Slits, Albertine was a member of the Flowers of Romance",
+  "description": "Australian-born British musician, singer, songwriter and writer. She is best known as the guitarist for the punk band the Slits. Albertine was also a member of the Flowers of Romance.",
   "picture": "https://i.ibb.co/k5tjL9q/10-viv-albertine.jpg",
   "music":"",
   "wiki":"https://i.ibb.co/k5tjL9q/10-viv-albertine.jpg"
@@ -82,7 +83,7 @@
   {
   "id": 11,
   "name": "Siouxsie Sioux",
-  "description": "English singer, songwriter, musician, and record producer. She is best known as the lead singer of the rock band Siouxsie and the Banshees.AllMusic named Siouxsie as 'one of the most influential British singers of the rock era'",
+  "description": "English singer, songwriter, musician, and record producer. She is best known as the lead singer of Siouxsie and the Banshees.nAllMusic named her as 'one of the most influential British singers of the rock era.'",
   "picture": "https://i.ibb.co/VHGy8J9/11-siouxsie-sioux-crop.jpg",
   "music":"",
   "wiki":"https://en.wikipedia.org/wiki/Siouxsie_Sioux"
@@ -122,7 +123,7 @@
   {
   "id": 16,
   "name": "Joan Jett",
-  "description": "American rock singer, songwriter, composer, musician, record producer, and actress. Jett is best known for her work as the frontwoman of her band Joan Jett & the Blackhearts, and for earlier founding and performing with the Runaways",
+  "description": "American musician, record producer and actress. Best known for her work as the frontwoman of Joan Jett & the Blackhearts, and for founding and performing with the Runaways.",
   "picture": "https://i.ibb.co/3zzWN3q/16-joan-jett-crop.jpg",
   "music":"",
   "wiki":"https://en.wikipedia.org/wiki/Joan_Jett"
@@ -154,7 +155,7 @@
   {
   "id": 20,
   "name": "Jayne County",
-  "description": "American singer, songwriter, actress and record producer. She was the vocalist of influential proto-punk band Wayne County & the Electric Chairs. She went on to become rock's first openly transgender singer",
+  "description": "American singer, songwriter, actress and record producer. She was the vocalist of influential proto-punk band Wayne County & the Electric Chairs. Rock's first openly transgender singer.",
   "picture": "https://i.ibb.co/LYSZjQz/20-jayne-county-crop.jpg",
   "music":"",
   "wiki":"https://en.wikipedia.org/wiki/Jayne_County"

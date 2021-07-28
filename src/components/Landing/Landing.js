@@ -4,11 +4,13 @@ import videoMix from "../../images/mix.mp4";
 import videoMix2 from "../../images/background.mp4";
 import poster from "../../images/poster.png";
 import Header from "./Header";
+import MainPioneers from "../Pioneers/MainPioneers";
+import MainGame1 from "../one-player/MainGame1";
 
 const Landing = () => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <main className="landing__main">
         <div className="main__container--title">
           <h1 className="main__title">Girls invented Punk not England</h1>
@@ -35,6 +37,8 @@ const Landing = () => {
           <source src={videoMix2} type="video/mp4" />
         </video>
       </main>
+      <MainGame1 />
+      <MainPioneers />
     </>
   );
 };
