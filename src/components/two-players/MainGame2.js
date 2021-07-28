@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Game2Header from "./Game2Header";
 
 const MainGame2 = () => {

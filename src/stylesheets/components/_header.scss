@@ -26,19 +26,20 @@
         justify-content: space-between;
 
         .header__link {
-            color: black;
+            color: rgba(0, 0, 0, 0.726);
             font-family: $fontfamily;
             font-size: 20px;
             font-weight: bold;
             margin-left: 20px;
-            text-decoration-line: underline;
+            //border-right: black solid 2px;
+            //padding-right: 10px;
+            //text-decoration-line: underline;
         }
     
         .header__link:hover {
             background-color: $link-hover;
             padding: 2px 3px;
             text-decoration-line: unset;
-            border: black solid;
         }
 
        

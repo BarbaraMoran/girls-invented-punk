@@ -19,7 +19,7 @@ const Header = () => {
           </Link> */}
 
           <Link className="header__link" to="/the-pioneers">
-            Meet the Pioneers
+            ⚡Meet the Pioneers⚡
           </Link>
         </div>
         <div className="social__media">

@@ -75,7 +75,7 @@
   "id": 10,
   "name": "Viv Albertine",
   "description": "Australian-born British musician, singer, songwriter and writer. She is best known as the guitarist for the punk band the Slits. Prior to joining the Slits, Albertine was a member of the Flowers of Romance",
-  "picture": "https://i.ibb.co/848H09B/10-viv-albertine-crop.jpg",
+  "picture": "https://i.ibb.co/k5tjL9q/10-viv-albertine.jpg",
   "music":"",
   "wiki":"https://i.ibb.co/k5tjL9q/10-viv-albertine.jpg"
   },   
@@ -99,7 +99,7 @@
   "id": 13,
   "name": "Alice Bag",
   "description": "American punk rock singer, musician, author, educator and feminist arctivist. She is the lead singer and co-founder of the Bags, one of the first wave of punk bands to form in the mid-1970s in Los Angeles.",
-  "picture": "https://i.ibb.co/qd7WNFk/13-alice-bag-crop.jpg",
+  "picture": "https://i.ibb.co/MPbFCXG/alice-bag-crop.jpg",
   "music":"",
   "wiki":"https://en.wikipedia.org/wiki/Alice_Bag"
   },
@@ -174,13 +174,5 @@
   "picture": "https://i.ibb.co/BP22d70/22-kira-roessler-crop.jpg",
   "music":"",
   "wiki":"https://en.wikipedia.org/wiki/Kira_Roessler"
-  },
-  {
-  "id": 23,
-  "name": "Gaye Advert",
-  "description": "English punk rock musician. Played bass guitar in The Adverts in the late 1970s. One of the 1st female rock stars of the punk rock movement.",
-  "picture": "https://i.ibb.co/F6cV7cH/1-gaye-advert-crop.jpg",
-  "music":"",
-  "wiki":"https://en.wikipedia.org/wiki/Gaye_Advert"
   }
   ]

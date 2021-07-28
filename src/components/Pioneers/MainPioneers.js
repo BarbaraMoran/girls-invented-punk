@@ -7,9 +7,9 @@ const MainPioneers = () => {
   return (
     <>
       <PioneersHeader />
-      <main>
+      <main className="pioneers__main">
         <h1 className="pioneers__title">Meet the pioneers</h1>
-        <List />
+        <List pioneersData={pioneersData} />
       </main>
     </>
   );
