@@ -8,6 +8,7 @@ const MainPioneers = () => {
     <>
       <PioneersHeader />
       <main>
+        <h1 className="pioneers__title">Meet the pioneers</h1>
         <List />
       </main>
     </>

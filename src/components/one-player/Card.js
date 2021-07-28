@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import ReactCardFlip from "react-card-flip";
-import backDeck from "../../images/backdeck.jpg";
+import backDeck from "../../images/card5.jpg";
 
 const Card = (props) => {
   const [isFlipped, setIsFlipped] = useState(false);
