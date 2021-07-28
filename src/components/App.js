@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import "../stylesheets/components/App.scss";
+import "../stylesheets/App.scss";
 import "../stylesheets/index.scss";
 import Landing from "./Landing/Landing";
 import MainGame2 from "./two-players/MainGame2";

@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "./Card";
-import "../../stylesheets/components/Cards.scss";
 
 const Cards = (props) => {
   const allCharacters = props.characters.map((eachCharacter, index) => {

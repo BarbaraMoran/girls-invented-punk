@@ -1,7 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import ReactCardFlip from "react-card-flip";
-import "../../stylesheets/components/Card.scss";
 import backDeck from "../../images/backdeck.jpg";
 
 const Card = (props) => {

@@ -14,12 +14,8 @@ const Header = () => {
       ></audio> */}
       <nav className="nav">
         <div className="site__links">
-          {/* <Link className="header__link" to="/">
+          <Link className="header__link" to="/">
             Home
-          </Link> */}
-
-          <Link className="header__link" to="/the-pioneers">
-            Meet the Pioneers
           </Link>
         </div>
         <div className="social__media">
