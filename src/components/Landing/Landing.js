@@ -1,9 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import videoMix from "../../images/mix.mp4";
 import videoMix2 from "../../images/background.mp4";
 import poster from "../../images/poster.png";
-import Header from "./Header";
+//import Header from "./Header";
 import MainPioneers from "../Pioneers/MainPioneers";
 import MainGame1 from "../one-player/MainGame1";
 
@@ -16,17 +16,28 @@ const Landing = () => {
           <h1 className="main__title">Girls invented Punk not England</h1>
         </div>
         <div className="main__container--subtitle-nav">
-          <h2 className="main__subtitle">Memory card game</h2>
+          {/* <h2 className="main__subtitle">Memory card game</h2> */}
           <nav className="main__nav">
-            <div className="main__nav--container">
-              <Link className="button__player" to="/one-player">
-                One player
-              </Link>
+            <div className="main__link--container">
+              <a className="link" href="#game">
+                Play
+                <i class="fas fa-chevron-down"></i>
+              </a>
+              {/* <Link className="link" to="/one-player">
+                Play
+              </Link> */}
             </div>
-            <div className="main__nav--container">
-              <Link className="button__player" to="/two-players">
-                Two players
-              </Link>
+            <div className="main__link--container">
+              <a className="link" href="#learn">
+                Learn
+                <i class="fas fa-chevron-down"></i>
+              </a>
+            </div>
+            <div className="main__link--container">
+              <a className="link" target="_blank" rel="noreferrer" href="#">
+                Playlist
+                <i class="fab fa-spotify"></i>
+              </a>
             </div>
           </nav>
         </div>

@@ -14,7 +14,7 @@
             text-align: center;
             height: 40px;
             padding: 10px;
-            background-color: #ff1179;
+            background-color:$main-color;
 
         }
 
@@ -43,6 +43,8 @@
             .article__link {
                 position: absolute;
                 bottom: 10px;
+                color: $main-color;
+                font-weight: bold;
                
             }
     

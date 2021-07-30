@@ -150,7 +150,7 @@
     
             }
     
-            .main__nav--container {
+            .main__link--container {
                 background-color: $main-color2;
                 border-radius: 22px;
                 width: 160px;
@@ -166,7 +166,7 @@
         
                 }
     
-                .button__player {
+                .link {
                     color: black;
                     font-family: $fontfamily;
                     font-size: 25px;
@@ -183,11 +183,11 @@
     
             }
     
-            .main__nav--container:hover {
+            .main__link--container:hover {
                 transform: scale(110%);
     
                 
-                .button__player:hover {
+                .link:hover {
                     color: black;  
                 }
      

@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+//import { Switch, Route } from "react-router-dom";
 import "../stylesheets/App.scss";
 import "../stylesheets/index.scss";
 import Landing from "./Landing/Landing";
@@ -9,9 +9,9 @@ import MainPioneers from "./Pioneers/MainPioneers";
 import NotFound from "./NotFound";
 
 const App = () => {
-  return (
-    <>
-      <Switch>
+  return <Landing></Landing>;
+  {
+    /* <Switch>
         <Route exact path="/">
           <Landing> </Landing>
         </Route>
@@ -21,15 +21,12 @@ const App = () => {
         <Route path="/two-players">
           <MainGame2></MainGame2>
         </Route>
-        <Route path="/the-pioneers">
-          <MainPioneers></MainPioneers>
-        </Route>
         <Route>
           <NotFound></NotFound>
         </Route>
       </Switch>
-    </>
-  );
+     */
+  }
 };
 
 export default App;

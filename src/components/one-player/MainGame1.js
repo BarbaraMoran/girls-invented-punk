@@ -64,7 +64,7 @@ const MainGame1 = () => {
 
   return (
     <>
-      <main className="main">
+      <main className="main" id="game">
         <Cards
           characters={deckDisposal}
           getCardInfo={getCardInfo}

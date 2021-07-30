@@ -7,7 +7,7 @@ const MainPioneers = () => {
   return (
     <>
       {/* <PioneersHeader /> */}
-      <main className="pioneers__main">
+      <main className="pioneers__main" id="learn">
         <h1 className="pioneers__title">Meet the pioneers</h1>
         <List pioneersData={pioneersData} />
       </main>
