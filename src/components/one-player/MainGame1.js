@@ -64,14 +64,15 @@ const MainGame1 = () => {
 
   return (
     <>
-      <main className="main" id="game">
+      <section className="game__section" id="game">
+        {/* <h3 className="game__title">Find the match!</h3> */}
         <Cards
           characters={deckDisposal}
           getCardInfo={getCardInfo}
           unflippedCards={unflippedCards}
           resolvedCards={resolvedCards}
         />
-      </main>
+      </section>
     </>
   );
 };

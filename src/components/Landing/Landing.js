@@ -48,8 +48,10 @@ const Landing = () => {
           <source src={videoMix2} type="video/mp4" />
         </video>
       </header>
-      <MainGame1 />
-      <MainPioneers />
+      <main>
+        <MainGame1 />
+        <MainPioneers />
+      </main>
     </>
   );
 };

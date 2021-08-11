@@ -8,36 +8,55 @@
         font-family: $fontfamily;
 
         .article__name {
-            font-size: 25px;
+            font-size: 20px;
             margin-bottom: 15px;
-            width: 350px;
+            width: 250px;
             text-align: center;
-            height: 40px;
+            height: 30px;
             padding: 10px;
             background-color:$main-color;
+
+            @media all and(min-width: 580px) {
+                font-size: 25px;
+                height: 40px;
+                width: 350px;
+            }
+
 
         }
 
         .article__img {
-            width: 360px;
+            width: 270px;
             border-radius: 22px;
             margin-bottom: 15px;
             box-shadow: 1px 1px 5px #666;
+
+            @media all and(min-width: 580px){
+                width: 380px;
+            }
+    
+            
         }
 
         .article__text {
-            font-size: 18px;
+            font-size: 16px;
             border: black solid 3px;
-            height: 180px;
+            height: 193px;
             border-radius: 22px;
             padding: 10px;
             position: relative;
             background-color: rgba(255, 255, 255, 0.835);
 
-            .article__info {
-                width: 350px;
-                
+            @media all and(min-width: 580px){
+                font-size: 18px;
+            }
 
+            .article__info {
+                width: 250px;
+
+                @media all and(min-width: 580px){
+                    width: 350px;
+                }
             }
 
             .article__link {

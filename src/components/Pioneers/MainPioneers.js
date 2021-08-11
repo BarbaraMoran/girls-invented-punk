@@ -1,16 +1,14 @@
 import React from "react";
-import PioneersHeader from "./PioneersHeader";
 import List from "./List";
 import pioneersData from "../../data/pioneersData.json";
 
 const MainPioneers = () => {
   return (
     <>
-      {/* <PioneersHeader /> */}
-      <main className="pioneers__main" id="learn">
-        <h1 className="pioneers__title">Meet the pioneers</h1>
+      <section className="pioneers__section" id="learn">
+        <h2 className="pioneers__title">Meet the pioneers</h2>
         <List pioneersData={pioneersData} />
-      </main>
+      </section>
     </>
   );
 };

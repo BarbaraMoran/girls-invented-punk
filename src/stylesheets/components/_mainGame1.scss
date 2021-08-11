@@ -1,7 +1,27 @@
-.main {
+.game__section {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     background-color: $main-color;
     height: 100vh;
+
+    .game__title {
+        font-family: $fontfamily-title;
+        font-size: 25px;
+        text-transform: uppercase;
+        text-align: center;
+
+        
+        @media all and(min-width: 580px){
+            font-size: 40px;
+        }
+
+        @media all and(min-width: 780px){
+            font-size: 60px;
+            word-spacing: initial;
+        }
+
+    }
 }
+
