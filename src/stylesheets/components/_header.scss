@@ -1,86 +1,86 @@
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 50px;
-    background-color: rgba(255, 255, 255, 0.698);
-    display: flex;
-    align-items: center;
-    box-shadow: 2px 2px 5px #666;
+// .header {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100vw;
+//     height: 50px;
+//     background-color: rgba(255, 255, 255, 0.698);
+//     display: flex;
+//     align-items: center;
+//     box-shadow: 2px 2px 5px #666;
 
-    .audio {
-        display: none;
-        margin-left: 15px;
-        @media all and(min-width:1000px){
-            display: block;
-            height: 30px;
-            width: 120px;
-        }
-    }
+//     .audio {
+//         display: none;
+//         margin-left: 15px;
+//         @media all and(min-width:1000px){
+//             display: block;
+//             height: 30px;
+//             width: 120px;
+//         }
+//     }
 
-    .nav {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+//     .nav {
+//         width: 100%;
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: space-between;
 
-        .header__link {
-            color: rgba(0, 0, 0, 0.726);
-            font-family: $fontfamily;
-            font-size: 20px;
-            font-weight: bold;
-            margin-left: 20px;
-            //border-right: black solid 2px;
-            //padding-right: 10px;
-            //text-decoration-line: underline;
-        }
+//         .header__link {
+//             color: rgba(0, 0, 0, 0.726);
+//             font-family: $fontfamily;
+//             font-size: 20px;
+//             font-weight: bold;
+//             margin-left: 20px;
+//             //border-right: black solid 2px;
+//             //padding-right: 10px;
+//             //text-decoration-line: underline;
+//         }
     
-        .header__link:hover {
-            background-color: $link-hover;
-            padding: 2px 3px;
-            text-decoration-line: unset;
-        }
+//         .header__link:hover {
+//             background-color: $link-hover;
+//             padding: 2px 3px;
+//             text-decoration-line: unset;
+//         }
 
        
-        .social__media {
-            margin-right: 20px;
+//         .social__media {
+//             margin-right: 20px;
 
-            .small {
-                margin-right: 15px;
-                font-family: $fontfamily;
-                display: none;
+//             .small {
+//                 margin-right: 15px;
+//                 font-family: $fontfamily;
+//                 display: none;
 
-                @media all and(min-width: 768px) {
-                    display: inline-block;
-                }
+//                 @media all and(min-width: 768px) {
+//                     display: inline-block;
+//                 }
     
         
-            }
+//             }
 
-            .sm__link {
-                color: black;
-                margin-right: 13px;
-                font-size: 20px;
-                display: none;
+//             .sm__link {
+//                 color: black;
+//                 margin-right: 13px;
+//                 font-size: 20px;
+//                 display: none;
     
-                @media all and(min-width: 768px) {
-                    display: inline-block;
-                }
+//                 @media all and(min-width: 768px) {
+//                     display: inline-block;
+//                 }
                 
-            }
+//             }
 
-            .github {
-                display: inline-block;
-                margin-right: 5px;
-            }
+//             .github {
+//                 display: inline-block;
+//                 margin-right: 5px;
+//             }
     
-        }
+//         }
     
         
-    }
+//     }
 
     
     
     
-}
+// }

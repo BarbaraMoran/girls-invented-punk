@@ -1,4 +1,4 @@
-.landing__main {
+.header {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -7,7 +7,114 @@
     align-items: center;
 
     
-    .main__background {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: $main-color2;
+        border-radius: 22px;
+        border:  black solid;
+        padding: 30px ;
+     
+
+
+        .title {
+            width: 280px;
+            font-family: $fontfamily-title;
+            font-size: 40px;
+            color: black;
+            text-align: center;
+            text-transform: uppercase;
+
+            @media all and(min-width: 400px) {
+                font-size: 43px;
+                width: 300px;
+    
+            }
+    
+            @media all and(min-width: 1000px) {
+                width: 800px;
+                font-weight: 400;
+                font-size: 50px;
+    
+            }
+
+        }
+    
+    
+        .nav__list {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            //height: 60px;
+            align-items: center;
+            //width: 280px;
+            //padding-bottom: 90px;
+  
+            
+            @media all and(min-width: 400px) {
+                width: 300px;
+    
+            }
+    
+    
+            @media all and(min-width: 1000px) {
+                width: 800px;
+                flex-direction: row;
+                justify-content: space-evenly;
+                //padding-bottom: 40px;
+    
+            }
+    
+            .nav__item {
+                background-color: $main-color;
+                width: 150px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 5px;
+                border-radius: 22px;
+                //margin-top: 10px;
+                //margin-bottom: 10px;
+    
+                @media all and(min-width: 1000px) {
+                    width: 160px;
+        
+                }
+    
+                .link {
+                    color: black;
+                    font-family: $fontfamily;
+                    font-size: 25px;
+                    font-weight: bold;
+                    width: 100%;
+                    text-align: center;
+
+                    .icon {
+                        padding-left: 15px;
+                    }
+    
+                    @media all and(min-width: 1000px) {
+                        font-size: 25px;
+            
+                    }
+                    
+                }
+    
+            }
+    
+            .nav__item:hover {
+                transform: scale(110%);
+     
+            }
+    
+            
+        }
+    
+
+    }
+
+   &__background {
         position: fixed;
         min-width: 100%;
         min-height: 100%;
@@ -24,7 +131,7 @@
         
     }
 
-    .main__background-min{
+    &__background-min{
         position: fixed;
         min-width: 100%;
         min-height: 100%;
@@ -41,163 +148,6 @@
 
     }
 
-    .main__container--title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: $main-color2;
-        border-top-left-radius: 22px;
-        border-top-right-radius: 22px;
-        border-top: black solid;
-        border-left: black solid;
-        border-right: black solid;
-        width: 280px;
-        height: 240px;
-
-        @media all and(min-width: 400px) {
-            width: 300px;
-            height: 300px;
-
-        }
-
-        @media all and(min-width: 1000px) {
-            width: 800px;
-            height: 180px;
-
-        }
-
-        .main__title {
-            font-family: $fontfamily-title;
-            font-weight: 200;
-            font-size: 40px;
-            color: black;
-            text-align: center;
-            text-transform: uppercase;
-
-            
-            @media all and(min-width: 400px) {
-            font-size: 43px;
-
-            }
-
-
-            @media all and(min-width: 1000px) {
-                font-weight: 400;
-                font-size: 50px;
-    
-            }
-
-        }
-    
-    }
-
-    .main__container--subtitle-nav {
-        background-color: $main-color;
-        border-bottom-left-radius: 22px;
-        border-bottom-right-radius: 22px;
-        border: black solid;
-        
-        .main__subtitle {
-            font-family: $fontfamily-title;
-            font-weight: 200;
-            font-style: normal;
-            font-size: 30px;
-            width: 280px;
-            text-align: center;
-            padding: 15px 0 10px 0;
-          
-    
-            
-            @media all and(min-width: 400px) {
-                width: 300px;
-    
-            }
-    
-    
-            @media all and(min-width: 1000px) {
-                font-weight: 400;
-                font-size: 40px;
-                width: 800px;
-                padding: 15px 0 20px 0;
-    
-    
-            }
-    
-        }
-    
-        .main__nav {
-            display: flex;
-            flex-direction: column;
-            height: 60px;
-            align-items: center;
-            width: 280px;
-            padding-bottom: 90px;
-  
-    
-            
-            @media all and(min-width: 400px) {
-                width: 300px;
-    
-            }
-    
-    
-            @media all and(min-width: 1000px) {
-                height: 60px;
-                width: 800px;
-                flex-direction: row;
-                justify-content: space-evenly;
-                padding-bottom: 40px;
-    
-            }
-    
-            .main__link--container {
-                background-color: $main-color2;
-                border-radius: 22px;
-                width: 160px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border: solid black;
-                margin-top: 10px;
-                margin-bottom: 10px;
-    
-                @media all and(min-width: 1000px) {
-                    width: 160px;
-        
-                }
-    
-                .link {
-                    color: black;
-                    font-family: $fontfamily;
-                    font-size: 25px;
-                    font-weight: bold;
-                    width: 100%;
-                    text-align: center;
-    
-                    @media all and(min-width: 1000px) {
-                        font-size: 25px;
-            
-                    }
-                    
-                }
-    
-            }
-    
-            .main__link--container:hover {
-                transform: scale(110%);
-    
-                
-                .link:hover {
-                    color: black;  
-                }
-     
-            }
-    
-            
-        }
-    
-
-    }
     
  
 }
