@@ -8,13 +8,23 @@
 
     
     &__container {
+        width: 280px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         background-color: $main-color2;
         border-radius: 22px;
         border:  black solid;
-        padding: 30px ;
+        padding: 30px 20px;
+
+        @media all and(min-width: 400px) {
+            width: 300px;
+
+        }
+
+        @media all and(min-width: 1000px) {
+            width: 800px;
+        }
+
      
 
 
@@ -25,10 +35,13 @@
             color: black;
             text-align: center;
             text-transform: uppercase;
+            margin-bottom: 20px;
 
             @media all and(min-width: 400px) {
                 font-size: 43px;
                 width: 300px;
+                margin-bottom: 30px;
+
     
             }
     
@@ -36,6 +49,8 @@
                 width: 800px;
                 font-weight: 400;
                 font-size: 50px;
+                margin-bottom: 40px;
+
     
             }
 
@@ -74,11 +89,13 @@
                 align-items: center;
                 padding: 5px;
                 border-radius: 22px;
-                //margin-top: 10px;
+                margin-top: 15px;
                 //margin-bottom: 10px;
     
                 @media all and(min-width: 1000px) {
                     width: 160px;
+                    margin-top: 0px;
+
         
                 }
     
