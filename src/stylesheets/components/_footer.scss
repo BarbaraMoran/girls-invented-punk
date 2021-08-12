@@ -1,0 +1,38 @@
+.footer {
+    width: 100vw;
+    height: 50px;
+    background-color: $main-color2;
+    display: flex;
+
+
+    .nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .social__media {
+
+            .small {
+                margin-right: 15px;
+                font-family: $fontfamily;
+                
+            }
+
+            .sm__link {
+                color: black;
+                margin-right: 13px;
+                font-size: 20px;
+                
+            }
+
+    
+        }
+    
+        
+    }
+
+    
+    
+    
+}

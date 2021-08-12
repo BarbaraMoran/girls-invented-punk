@@ -1,25 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import music from "../../audio/girls.mp3";
 
-const Header = () => {
+const Footer = () => {
   return (
-    <header className="header">
-      {/* <audio
-        className="audio"
-        id="audio"
-        preload="auto"
-        controls
-        src={music}
-      ></audio> */}
+    <footer className="footer">
       <nav className="nav">
-        <div className="site__links">
-          <Link className="header__link" to="/">
-            Home
-          </Link>
-        </div>
         <div className="social__media">
-          <small className="small">made by B.M(2021)</small>
+          <small className="small">Bárbara Morán(2021)</small>
           <a
             className="sm__link github"
             target="_blank"
@@ -55,8 +41,8 @@ const Header = () => {
           </a>
         </div>
       </nav>
-    </header>
+    </footer>
   );
 };
 
-export default Header;
+export default Footer;

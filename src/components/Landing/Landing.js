@@ -1,15 +1,15 @@
 import React from "react";
-//import { Link } from "react-router-dom";
 import videoMix from "../../images/mix.mp4";
 import videoMix2 from "../../images/background.mp4";
 import poster from "../../images/poster.png";
 import MainPioneers from "../Pioneers/MainPioneers";
 import MainGame1 from "../one-player/MainGame1";
+import Footer from "./Footer";
 
 const Landing = () => {
   return (
     <>
-      <header className="header">
+      <header className="header" id="home">
         <div className="header__container">
           <h1 className="title">Girls invented Punk not England</h1>
           <nav className="nav">
@@ -51,6 +51,7 @@ const Landing = () => {
       <main>
         <MainGame1 />
         <MainPioneers />
+        <Footer />
       </main>
     </>
   );

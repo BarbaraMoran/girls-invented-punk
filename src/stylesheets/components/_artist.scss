@@ -15,6 +15,7 @@
             height: 30px;
             padding: 10px;
             background-color:$main-color;
+            box-shadow: 1px 1px 5px #666;
 
             @media all and(min-width: 580px) {
                 font-size: 25px;
@@ -46,6 +47,7 @@
             padding: 10px;
             position: relative;
             background-color: rgba(255, 255, 255, 0.835);
+            box-shadow: 1px 1px 5px #666;
 
             @media all and(min-width: 580px){
                 font-size: 18px;

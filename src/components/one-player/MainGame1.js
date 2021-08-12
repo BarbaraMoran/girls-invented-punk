@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Cards from "./Cards";
+import HomeButton from "../HomeButton";
 import charactersData from "../../data/onePlayerData.json";
 
 const MainGame1 = () => {
@@ -65,7 +66,7 @@ const MainGame1 = () => {
   return (
     <>
       <section className="game__section" id="game">
-        {/* <h3 className="game__title">Find the match!</h3> */}
+        <HomeButton />
         <Cards
           characters={deckDisposal}
           getCardInfo={getCardInfo}
