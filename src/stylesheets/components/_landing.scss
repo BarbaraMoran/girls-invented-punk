@@ -5,7 +5,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     
     &__container {
         width: 270px;
@@ -18,15 +17,11 @@
 
         @media all and(min-width: 400px) {
             width: 300px;
-
         }
 
         @media all and(min-width: 1000px) {
             width: 800px;
         }
-
-     
-
 
         .title {
             width: 280px;
@@ -41,8 +36,6 @@
                 font-size: 43px;
                 width: 300px;
                 margin-bottom: 30px;
-
-    
             }
     
             @media all and(min-width: 1000px) {
@@ -50,8 +43,6 @@
                 font-weight: 400;
                 font-size: 50px;
                 margin-bottom: 40px;
-
-    
             }
 
         }
@@ -61,24 +52,16 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            //height: 60px;
             align-items: center;
-            //width: 280px;
-            //padding-bottom: 90px;
-  
-            
+
             @media all and(min-width: 400px) {
                 width: 300px;
-    
             }
-    
     
             @media all and(min-width: 1000px) {
                 width: 800px;
                 flex-direction: row;
                 justify-content: space-evenly;
-                //padding-bottom: 40px;
-    
             }
     
             .nav__item {
@@ -90,13 +73,10 @@
                 padding: 5px;
                 border-radius: 22px;
                 margin-top: 15px;
-                //margin-bottom: 10px;
     
                 @media all and(min-width: 1000px) {
                     width: 160px;
                     margin-top: 0px;
-
-        
                 }
     
                 .link {
@@ -113,7 +93,7 @@
     
                     @media all and(min-width: 1000px) {
                         font-size: 25px;
-            
+        
                     }
                     
                 }
@@ -122,13 +102,10 @@
     
             .nav__item:hover {
                 transform: scale(110%);
-     
             }
     
-            
         }
     
-
     }
 
    &__background {
@@ -143,7 +120,6 @@
 
         @media all and(min-width: 1200px) {
             display: block;
-    
         }
         
     }
@@ -160,11 +136,7 @@
         @media all and(min-width: 1200px) {
             display: none;
             background-color: transparent;
-    
         }
-
     }
 
-    
- 
 }

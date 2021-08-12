@@ -32,7 +32,7 @@ const Card = (props) => {
         <ReactCardFlip isFlipped={isFlipped}>
           <img
             className="item__picture"
-            alt="deck decoration"
+            alt="back deck decoration"
             src={backDeck}
             onClick={hasEvent ? handleCard : null}
             data-name={props.name}

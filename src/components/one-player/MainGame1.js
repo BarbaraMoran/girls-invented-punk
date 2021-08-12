@@ -1,6 +1,5 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import Cards from "./Cards";
 import HomeButton from "../HomeButton";
 import charactersData from "../../data/onePlayerData.json";
@@ -11,6 +10,10 @@ const MainGame1 = () => {
   const [cardSelection2, setCardSelection2] = useState({});
   const [resolvedCards, setResolvedCards] = useState([]);
   const [unflippedCards, setUnflippedCards] = useState([]);
+  //const [allresolvedCards, setAllResolvedCards] = useState([]);
+
+  console.log(resolvedCards);
+  //console.log(allresolvedCards);
 
   useEffect(() => {
     charactersData.sort(function () {
@@ -37,8 +40,6 @@ const MainGame1 = () => {
     return 1;
   };
 
-  console.log(cardSelection1);
-  console.log(cardSelection2);
   console.log(deckDisposal);
 
   const checkMatch = () => {
@@ -50,6 +51,7 @@ const MainGame1 = () => {
 
   const resolveCards = () => {
     setResolvedCards([cardSelection1.index, cardSelection2.index]);
+    //setAllResolvedCards([allresolvedCards.push(resolvedCards)]);
     resetCardSelection();
   };
 

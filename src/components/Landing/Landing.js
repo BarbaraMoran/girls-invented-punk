@@ -23,7 +23,7 @@ const Landing = () => {
               <li className="nav__item">
                 <a className="link" href="#learn">
                   Learn
-                  <i class="fas fa-chevron-down icon"></i>
+                  <i className="fas fa-chevron-down icon"></i>
                 </a>
               </li>
               <li className="nav__item">
