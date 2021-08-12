@@ -24,6 +24,14 @@
   "wiki":"https://en.wikipedia.org/wiki/Pauline_Murray"
   },
   {
+  "id": 3,
+  "name": "Lora Logic",
+  "description": "British saxophonist and singer. She was briefly a member of the band X-Ray Spex and formed Essential Logic. She also played on recordings by The Raincoats, The Stranglers, Kollaa Kestää and Swell Maps and, later, Boy George. ",
+  "picture": "https://i.ibb.co/WzYTSr0/33-Lora-Logic-crap.jpg",
+  "music":"",
+  "wiki":"https://en.wikipedia.org/wiki/Lora_Logic"
+  },
+  {
   "id": 4,
   "name": "Jordan",
   "description": "English model and actress noted for her work with Vivienne Westwood and the Sex boutique in the Kings Road area of London in the mid-1970s. Her style made her a highly visible icon of the London punk subculture.",
@@ -137,6 +145,22 @@
   "wiki":"https://en.wikipedia.org/wiki/Debbie_Harry"
   }, 
   {
+  "id": 17,
+  "name": "Ana da Silva",
+  "description": "Portuguese musician born in Madeira. Da Silva relocated to London in December 1974, and while studying at Hornsey College of Art, she formed the Raincoats with Gina Birch in 1977",
+  "picture": "https://i.ibb.co/VQpZPyX/34-Ana-da-Silva-crap.jpg",
+  "music":"",
+  "wiki":"https://en.wikipedia.org/wiki/Ana_da_Silva"
+  }, 
+  {
+  "id": 17,
+  "name": "Gina Birch",
+  "description": "English musician and filmmaker, best known as a founding member of post-punk rock band, The Raincoats.",
+  "picture": "https://i.ibb.co/2tWwLmq/35-gina-birch-crap.jpg",
+  "music":"",
+  "wiki":"https://en.wikipedia.org/wiki/Gina_Birch"
+  }, 
+  {
   "id": 18,
   "name": "Penelope Houston",
   "description": "American singer-songwriter best known as the singer for the San Francisco-based punk rock band the Avengers.",
@@ -235,7 +259,7 @@
   {
     "id": 30,
     "name": "Debsey Wykes",
-    "description": "Vocal and bassist of the self-proclaimed post-punk band Dolly Mixture, formed in 1978. They formed a sharp contrast against the ruling post-punk and angst building up in London around 1979.",
+    "description": "Vocal and bassist of the english post-punk band Dolly Mixture, formed in 1978. They formed a sharp contrast against the ruling post-punk and angst building up in London around 1979.",
     "picture": "https://i.ibb.co/x6QGbwR/27-Debsey-Wykes-crop.jpg",
     "music":"",
     "wiki":"https://www.allmusic.com/artist/dolly-mixture-mn0001169036/biography"
@@ -243,7 +267,7 @@
     {
     "id": 31,
     "name": "Rachel Bor",
-    "description": "Guitarist and vocalist of the self-proclaimed post-punk band Dolly Mixture, formed in 1978. They formed a sharp contrast against the ruling post-punk and angst building up in London around 1979.",
+    "description": "Guitarist and vocalist of the english post-punk band Dolly Mixture, formed in 1978. They formed a sharp contrast against the ruling post-punk and angst building up in London around 1979.",
     "picture": "https://i.ibb.co/zxyzrd4/28-Rachel-Bor-crop.jpg",
     "music":"",
     "wiki":"https://www.allmusic.com/artist/dolly-mixture-mn0001169036/biography"
@@ -251,7 +275,7 @@
     {
     "id": 32,
     "name": "Hester Smith",
-    "description": "Drummer of the self-proclaimed post-punk band Dolly Mixture, formed in 1978. They formed a sharp contrast against the ruling post-punk and angst building up in London around 1979.",
+    "description": "Drummer of the english post-punk band Dolly Mixture, formed in 1978. They formed a sharp contrast against the ruling post-punk and angst building up in London around 1979.",
     "picture": "https://i.ibb.co/X37nY05/29-Hester-Smith-crop.jpg",
     "music":"",
     "wiki":"https://www.allmusic.com/artist/dolly-mixture-mn0001169036/biography"
