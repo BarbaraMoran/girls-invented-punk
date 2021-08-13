@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import Cards from "./Cards";
 import HomeButton from "../HomeButton";
+import Counter from "./Counter";
 import charactersData from "../../data/onePlayerData.json";
 
 const MainGame1 = () => {
@@ -10,10 +11,9 @@ const MainGame1 = () => {
   const [cardSelection2, setCardSelection2] = useState({});
   const [resolvedCards, setResolvedCards] = useState([]);
   const [unflippedCards, setUnflippedCards] = useState([]);
-  //const [allresolvedCards, setAllResolvedCards] = useState([]);
+  const [matchsNumber, setMatchsNumber] = useState(0);
 
-  console.log(resolvedCards);
-  //console.log(allresolvedCards);
+  console.log(matchsNumber);
 
   useEffect(() => {
     charactersData.sort(function () {
@@ -51,8 +51,8 @@ const MainGame1 = () => {
 
   const resolveCards = () => {
     setResolvedCards([cardSelection1.index, cardSelection2.index]);
-    //setAllResolvedCards([allresolvedCards.push(resolvedCards)]);
     resetCardSelection();
+    addMatch();
   };
 
   const unflipCards = () => {
@@ -65,10 +65,24 @@ const MainGame1 = () => {
     setCardSelection2({});
   };
 
+  const addMatch = () => {
+    setMatchsNumber(matchsNumber + 1);
+    checkEndOfTheGame();
+  };
+
+  const totalpairs = charactersData.length / 2;
+
+  const checkEndOfTheGame = () => {
+    if (matchsNumber === totalpairs - 1) {
+      console.log("felicidades");
+    }
+  };
+
   return (
     <>
       <section className="game__section" id="game">
         <HomeButton />
+        <Counter matchsNumber={matchsNumber} totalpairs={totalpairs} />
         <Cards
           characters={deckDisposal}
           getCardInfo={getCardInfo}
