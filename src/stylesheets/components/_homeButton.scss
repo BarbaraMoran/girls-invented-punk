@@ -1,8 +1,12 @@
 .home-button {
-    font-size: 30px;
+    font-size: 20px;
     color: black;
-}
 
+    @media all and(min-width: 400px) {
+        font-size: 30px;
+    }
+
+}
 .pioneers__section .home-button {
     margin-bottom: 30px;
 } 

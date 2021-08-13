@@ -13,8 +13,6 @@ const MainGame1 = () => {
   const [unflippedCards, setUnflippedCards] = useState([]);
   const [matchsNumber, setMatchsNumber] = useState(0);
 
-  console.log(matchsNumber);
-
   useEffect(() => {
     charactersData.sort(function () {
       return 0.5 - Math.random();
