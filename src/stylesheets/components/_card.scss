@@ -12,7 +12,6 @@
             width: 60px;
         }
 
-
         @media all and(min-width: 500px){
             width: 80px;
         }
@@ -39,9 +38,11 @@
       
     }
 
+    .item__picture:hover {
+        border: solid black;
+
+    }
+
 
 }
 
-.list__item:hover {
-    transform: scale(101%);
-}
