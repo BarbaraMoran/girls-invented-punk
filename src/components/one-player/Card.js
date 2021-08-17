@@ -31,7 +31,7 @@ const Card = (props) => {
       <li key={props.index} className="list__item">
         <ReactCardFlip isFlipped={isFlipped}>
           <img
-            className="item__picture"
+            className="item__picture back-deck"
             alt="back deck decoration"
             src={backDeck}
             onClick={hasEvent ? handleCard : null}
