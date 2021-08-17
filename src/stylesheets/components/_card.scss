@@ -2,7 +2,7 @@
     
 
     .item__picture {
-        width: 50px;
+        width: 48px;
         border-radius: 15px;
         cursor: pointer;
         margin: 5px;
@@ -13,7 +13,7 @@
         }
 
         @media all and(min-width: 500px){
-            width: 80px;
+            width: 77px;
         }
         
         @media all and(min-width: 768px){
@@ -24,11 +24,11 @@
             width: 115px;
         }
 
-        @media all and(min-width: 1140px){
-            width: 130px;
+        @media all and(min-width: 1259px){
+            width: 120px;
         }
       
-        @media all and(min-width: 1400px){
+        @media all and(min-width: 1440px){
             width: 150px;
         }
 

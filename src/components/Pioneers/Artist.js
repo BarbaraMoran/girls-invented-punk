@@ -1,7 +1,7 @@
 import React from "react";
 
 const Artist = (props) => {
-  const pioneer = props.eachPioneer;
+  const pioneer = props.pioneer;
 
   return (
     <li className="pioneer__item">

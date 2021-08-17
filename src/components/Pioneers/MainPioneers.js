@@ -6,9 +6,11 @@ import pioneersData from "../../data/pioneersData.json";
 const MainPioneers = () => {
   return (
     <>
-      <section className="pioneers__section" id="learn">
+      <section className="pioneers__section">
         <HomeButton />
-        <h2 className="pioneers__title">Meet the pioneers</h2>
+        <h2 className="pioneers__title" id="learn">
+          Meet the pioneers
+        </h2>
         <List pioneersData={pioneersData} />
         <HomeButton />
       </section>

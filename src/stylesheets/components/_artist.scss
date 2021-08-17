@@ -1,24 +1,26 @@
 .pioneer__item {
     margin-bottom: 50px;
+    //cursor: pointer;
 
     .pioneer__article {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         font-family: $fontfamily;
 
         .article__name {
             font-size: 20px;
-            margin-bottom: 15px;
+            margin-bottom: 40px;
+            margin-top: 40px;
             width: 250px;
             text-align: center;
             height: 30px;
             padding: 10px;
-            background-color:$main-color;
-            box-shadow: 1px 1px 5px #666;
+            color: white;
 
             @media all and(min-width: 580px) {
-                font-size: 25px;
+                font-size: 28px;
                 height: 40px;
                 width: 350px;
             }
@@ -27,43 +29,41 @@
         }
 
         .article__img {
-            width: 270px;
+            width: 220px;
             border-radius: 22px;
             margin-bottom: 15px;
-            box-shadow: 1px 1px 5px #666;
+            box-shadow: 2px 2px 6px #666;
 
             @media all and(min-width: 580px){
-                width: 380px;
+                width: 260px;
             }
     
         }
 
         .article__text {
             font-size: 16px;
-            border: black solid 3px;
-            height: 193px;
-            border-radius: 22px;
+            height: 260px;
             padding: 10px;
             position: relative;
-            background-color: rgba(255, 255, 255, 0.835);
-            box-shadow: 1px 1px 5px #666;
+            color: white;
 
             @media all and(min-width: 580px){
                 font-size: 18px;
             }
 
             .article__info {
+                text-align: center;
                 width: 250px;
 
                 @media all and(min-width: 580px){
-                    width: 350px;
+                    width: 400px;
                 }
             }
 
             .article__link {
                 position: absolute;
                 bottom: 10px;
-                color: $main-color;
+                color: $main-color2;
                 font-weight: bold;
                
             }

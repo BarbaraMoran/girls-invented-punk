@@ -1,7 +1,7 @@
 .footer {
     width: 100vw;
     height: 50px;
-    background-color: $main-color2;
+    background-color: black;
     display: flex;
 
 
@@ -16,11 +16,12 @@
             .small {
                 margin-right: 15px;
                 font-family: $fontfamily;
+                color: $main-color2;
                 
             }
 
             .sm__link {
-                color: black;
+                color: $main-color;
                 margin-right: 13px;
                 font-size: 20px;
                 

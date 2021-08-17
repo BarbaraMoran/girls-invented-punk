@@ -1,13 +1,71 @@
 import React from "react";
+import { useState } from "react";
+import {
+  Carousel,
+  CarouselItem,
+  CarouselControl,
+  CarouselIndicators,
+} from "reactstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Artist from "./Artist";
-import { Slider } from "@lifarl/react-scroll-snap-slider";
 
 const List = (props) => {
-  const allArtists = props.pioneersData.map((eachPioneer) => {
-    return <Artist eachPioneer={eachPioneer} />;
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [animating, setAnimating] = useState(false);
+
+  const next = () => {
+    if (animating) return;
+    const nextIndex =
+      activeIndex === props.pioneersData.length - 1 ? 0 : activeIndex + 1;
+    setActiveIndex(nextIndex);
+  };
+
+  const previous = () => {
+    if (animating) return;
+    const nextIndex =
+      activeIndex === 0 ? props.pioneersData.length - 1 : activeIndex - 1;
+    setActiveIndex(nextIndex);
+  };
+
+  const goToIndex = (newIndex) => {
+    if (animating) return;
+    setActiveIndex(newIndex);
+  };
+
+  const slides = props.pioneersData.map((pioneer) => {
+    return (
+      <CarouselItem
+        onExiting={() => setAnimating(true)}
+        onExited={() => setAnimating(false)}
+        key={pioneer.id}
+      >
+        <ul className="pioneers__list">
+          <Artist pioneer={pioneer} />
+        </ul>
+      </CarouselItem>
+    );
   });
 
-  return <Slider>{allArtists}</Slider>;
+  return (
+    <Carousel activeIndex={activeIndex} next={next} previous={previous}>
+      <CarouselIndicators
+        items={props.pioneersData}
+        activeIndex={activeIndex}
+        onClickHandler={goToIndex}
+      />
+      {slides}
+      <CarouselControl
+        direction="prev"
+        directionText="Previous"
+        onClickHandler={previous}
+      />
+      <CarouselControl
+        direction="next"
+        directionText="Next"
+        onClickHandler={next}
+      />
+    </Carousel>
+  );
 };
 
 export default List;
