@@ -27,7 +27,12 @@ const Landing = () => {
                 </a>
               </li>
               <li className="nav__item">
-                <a className="link" target="_blank" rel="noreferrer" href="#">
+                <a
+                  className="link"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://open.spotify.com/playlist/2mBqI4lBQoH51XEcLBwgxs?si=O8jnJikWSyqXBc_Eay-cMQ&dl_branch=1&nd=1"
+                >
                   Playlist
                   <i class="fab fa-spotify icon"></i>
                 </a>
