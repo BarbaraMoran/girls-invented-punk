@@ -1,21 +1,38 @@
 import React from "react";
 import Artist from "./Artist";
-import Carousel from "react-bootstrap/Carousel";
-import "bootstrap/dist/css/bootstrap.min.css";
+
+import {
+  MDBCarousel,
+  MDBCarouselInner,
+  MDBCarouselItem,
+  MDBCarouselCaption,
+  MDBCarouselElement,
+} from "mdb-react-ui-kit";
 
 const List = (props) => {
   const allArtists = props.pioneersData.map((eachPioneer) => {
     return (
-      <Carousel.Item interval={30000}>
+      <MDBCarouselItem itemId={eachPioneer.id}>
         <Artist pioneer={eachPioneer} />
-      </Carousel.Item>
+      </MDBCarouselItem>
     );
   });
 
   return (
-    <ul className="pioneers__list">
-      <Carousel variant="dark">{allArtists}</Carousel>
-    </ul>
+    <>
+      <ul className="pioneers__list">
+        <MDBCarousel showControls interval={50000} dark>
+          <MDBCarouselInner>
+            <MDBCarouselItem itemId={0}>
+              <div className="carousel__title">
+                <h2 className="title-pioneers">Meet the Pioneers</h2>
+              </div>
+            </MDBCarouselItem>
+            {allArtists}
+          </MDBCarouselInner>
+        </MDBCarousel>
+      </ul>
+    </>
   );
 };
 export default List;

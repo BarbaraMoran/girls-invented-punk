@@ -1,25 +1,28 @@
 .pioneer__item {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 
     .pioneer__article {
         display: flex;
         flex-direction: column;
         align-items: center;
         font-family: $fontfamily;
+        cursor: pointer;
 
         .article__name {
+            color: black;
             font-size: 20px;
             margin-bottom: 15px;
             width: 250px;
             text-align: center;
-            height: 30px;
+            height: 40px;
             padding: 10px;
             background-color:$main-color;
             box-shadow: 1px 1px 5px #666;
 
             @media all and(min-width: 580px) {
                 font-size: 25px;
-                height: 40px;
+                height: 50px;
+                padding: 10px;
                 width: 350px;
             }
 
@@ -41,10 +44,9 @@
         .article__text {
             font-size: 16px;
             border: black solid 3px;
-            height: 193px;
+            //height: 193px;
             border-radius: 22px;
             padding: 10px;
-            position: relative;
             background-color: rgba(255, 255, 255, 0.835);
             box-shadow: 1px 1px 5px #666;
 
@@ -61,8 +63,8 @@
             }
 
             .article__link {
-                position: absolute;
-                bottom: 10px;
+                // position: absolute;
+                // bottom: 10px;
                 color: $main-color;
                 font-weight: bold;
                

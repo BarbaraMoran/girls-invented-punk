@@ -6,23 +6,4 @@
     align-items: center;
     background-color: $main-color2;
     
-    .pioneers__title {
-        font-family: $fontfamily-title;
-        font-size: 35px;
-        text-transform: uppercase;
-        text-align: center;
-        word-spacing: 100vw;
-
-        
-
-        @media all and(min-width: 580px){
-            font-size: 40px;
-            word-spacing: initial;
-        }
-
-        @media all and(min-width: 780px){
-            font-size: 60px;
-        }
-
-    }
 }

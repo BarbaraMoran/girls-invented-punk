@@ -1,7 +1,49 @@
+
+ 
+ 
  .pioneers__list {
 //     display: flex;
 //     flex-wrap: wrap;
-     margin: 50px 20px 20px;
+     margin-top: 50px;
 //     justify-content: center;
 //     gap: 50px;
  }
+
+
+ .carousel__title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .title-pioneers {
+          text-transform: uppercase;
+          font-size: 35px;
+          color:black;
+          word-spacing: 100vw;
+          font-family: $fontfamily-title;
+          margin-top: 300px;
+          text-align: center;
+
+     
+          @media all and(min-width: 800px){
+              font-size: 50px;
+              margin-top: 450px;
+              word-spacing: initial;
+
+          }
+     
+          @media all and(min-width: 1100px){
+              font-size: 70px;
+              margin-top: 450px;
+              word-spacing: initial;
+
+
+
+          }
+     
+      } 
+ }
+
+
+ 

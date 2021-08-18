@@ -8,7 +8,6 @@ const MainPioneers = () => {
     <>
       <section className="pioneers__section" id="learn">
         <HomeButton />
-        <h2 className="pioneers__title">Meet the pioneers</h2>
         <List pioneersData={pioneersData} />
         <HomeButton />
       </section>
