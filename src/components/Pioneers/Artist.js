@@ -21,7 +21,7 @@ const Artist = (props) => {
             target="_blank"
             rel="noreferrer"
           >
-            👉More Info
+            👉 More Info
           </a>
         </div>
       </article>

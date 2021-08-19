@@ -4,6 +4,7 @@ import Cards from "./Cards";
 import HomeButton from "../HomeButton";
 import Counter from "./Counter";
 import charactersData from "../../data/onePlayerData.json";
+//import PlayAgainBtn from "./PlayAgainBtn";
 
 const MainGame1 = () => {
   const [deckDisposal, setDeckDisposal] = useState([]);
@@ -23,6 +24,12 @@ const MainGame1 = () => {
   useEffect(() => {
     checkMatch();
   }, [cardSelection2]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // const playAgain = () => {
+  //   charactersData.sort(function () {
+  //     return 0.5 - Math.random();
+  //   });
+  // };
 
   const getCardInfo = (name, index) => {
     if (cardSelection1.name === name && cardSelection1.index === index) {
@@ -80,7 +87,10 @@ const MainGame1 = () => {
     <>
       <section className="game__section" id="game">
         <HomeButton />
-        <Counter matchsNumber={matchsNumber} totalpairs={totalpairs} />
+        <div className="functions-container">
+          <Counter matchsNumber={matchsNumber} totalpairs={totalpairs} />
+          {/* <PlayAgainBtn playAgain={playAgain} /> */}
+        </div>
         <Cards
           characters={deckDisposal}
           getCardInfo={getCardInfo}

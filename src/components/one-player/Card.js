@@ -8,8 +8,9 @@ const Card = (props) => {
   const [hasEvent, setHasEvent] = useState(true);
 
   useEffect(() => {
-    if (props.unflippedCards.includes(props.index))
+    if (props.unflippedCards.includes(props.index)) {
       setTimeout(() => setIsFlipped(false), 1400);
+    }
   }, [props.unflippedCards]); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
