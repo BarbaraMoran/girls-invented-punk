@@ -3,6 +3,7 @@
     height: 50px;
     background-color: $main-color2;
     display: flex;
+    border-top: solid 10px $main-color2;
 
 
     .nav {
@@ -24,6 +25,11 @@
                 margin-right: 13px;
                 font-size: 20px;
                 
+            }
+
+            .sm__link:hover {
+                color: $main-color;
+
             }
 
 

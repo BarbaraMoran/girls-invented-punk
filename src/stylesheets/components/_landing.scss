@@ -2,7 +2,6 @@
     width: 100vw;
     height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     
@@ -10,10 +9,11 @@
         width: 270px;
         display: flex;
         flex-direction: column;
+        align-items: center;
         background-color: $main-color2;
         border-radius: 22px;
         border:  black solid;
-        padding: 30px 20px;
+        padding: 30px;
 
         @media all and(min-width: 400px) {
             width: 300px;
@@ -26,11 +26,11 @@
         .title {
             width: 280px;
             font-family: $fontfamily-title;
-            font-size: 40px;
+            font-size: 30px;
             color: black;
-            text-align: center;
             text-transform: uppercase;
             margin-bottom: 20px;
+            text-align: center;
 
             @media all and(min-width: 400px) {
                 font-size: 43px;
@@ -51,8 +51,8 @@
         .nav__list {
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
+            padding: 0;
 
             @media all and(min-width: 400px) {
                 width: 300px;

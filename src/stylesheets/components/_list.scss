@@ -1,16 +1,4 @@
-
- 
- 
- .pioneers__list {
-//     display: flex;
-//     flex-wrap: wrap;
-     margin-top: 50px;
-//     justify-content: center;
-//     gap: 50px;
- }
-
-
- .carousel__title {
+.carousel__title {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -22,10 +10,20 @@
           color:black;
           word-spacing: 100vw;
           font-family: $fontfamily-title;
-          margin-top: 300px;
+          margin-top: 200px;
           text-align: center;
 
      
+          @media all and(min-width: 370px){
+            font-size: 35px;
+            margin-top: 300px;
+
+          }
+          @media all and(min-width: 600px){
+              font-size: 50px;
+              margin-top: 400px;
+
+          }
           @media all and(min-width: 800px){
               font-size: 50px;
               margin-top: 450px;
@@ -46,4 +44,6 @@
  }
 
 
- 
+ .pioneers__list {
+     padding: 0;
+ }

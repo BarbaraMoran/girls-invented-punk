@@ -1,5 +1,4 @@
 .pioneer__item {
-    margin-bottom: 40px;
 
     .pioneer__article {
         display: flex;
@@ -10,30 +9,41 @@
 
         .article__name {
             color: black;
-            font-size: 20px;
+            font-size: 17px;
             margin-bottom: 15px;
-            width: 250px;
+            width: 220px;
             text-align: center;
             height: 40px;
             padding: 10px;
             background-color:$main-color;
             box-shadow: 1px 1px 5px #666;
 
+            @media all and(min-width: 450px) {
+                font-size: 20px;
+                height: 40px;
+                padding: 10px;
+                width: 250px;
+            }
             @media all and(min-width: 580px) {
                 font-size: 25px;
                 height: 50px;
-                padding: 10px;
-                width: 350px;
+                width: 380px;
+
             }
 
 
         }
 
         .article__img {
-            width: 270px;
+            width: 220px;
             border-radius: 22px;
             margin-bottom: 15px;
             box-shadow: 1px 1px 5px #666;
+
+            @media all and(min-width: 450px) {
+                width: 250px;
+
+            }
 
             @media all and(min-width: 580px){
                 width: 380px;
@@ -42,13 +52,17 @@
         }
 
         .article__text {
-            font-size: 16px;
+            font-size: 10px;
             border: black solid 3px;
-            //height: 193px;
             border-radius: 22px;
             padding: 10px;
             background-color: rgba(255, 255, 255, 0.835);
             box-shadow: 1px 1px 5px #666;
+
+            @media all and(min-width: 370px) {
+                font-size: 16px;
+
+            }
 
             @media all and(min-width: 580px){
                 font-size: 18px;
@@ -63,8 +77,6 @@
             }
 
             .article__link {
-                // position: absolute;
-                // bottom: 10px;
                 color: $main-color;
                 font-weight: bold;
                
@@ -75,8 +87,6 @@
 
       
     }
-
-  
 
 
 }
