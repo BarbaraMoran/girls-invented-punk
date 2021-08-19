@@ -10,7 +10,7 @@ import "mdb-react-ui-kit/dist/css/mdb.min.css";
 const List = (props) => {
   const allArtists = props.pioneersData.map((eachPioneer) => {
     return (
-      <MDBCarouselItem itemId={eachPioneer.id} interval={30000}>
+      <MDBCarouselItem itemId={eachPioneer.id} interval={false}>
         <Artist pioneer={eachPioneer} />
       </MDBCarouselItem>
     );

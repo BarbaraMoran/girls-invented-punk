@@ -4,7 +4,7 @@ import Cards from "./Cards";
 import HomeButton from "../HomeButton";
 import Counter from "./Counter";
 import charactersData from "../../data/onePlayerData.json";
-//import PlayAgainBtn from "./PlayAgainBtn";
+import PlayAgainBtn from "./PlayAgainBtn";
 
 const MainGame1 = () => {
   const [deckDisposal, setDeckDisposal] = useState([]);
@@ -25,11 +25,14 @@ const MainGame1 = () => {
     checkMatch();
   }, [cardSelection2]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // const playAgain = () => {
-  //   charactersData.sort(function () {
-  //     return 0.5 - Math.random();
-  //   });
-  // };
+  const playAgain = () => {
+    charactersData.sort(function () {
+      return 0.5 - Math.random();
+    });
+
+    setDeckDisposal(charactersData);
+    setMatchsNumber(0);
+  };
 
   const getCardInfo = (name, index) => {
     if (cardSelection1.name === name && cardSelection1.index === index) {
@@ -76,7 +79,6 @@ const MainGame1 = () => {
   };
 
   const totalpairs = charactersData.length / 2;
-
   const checkEndOfTheGame = () => {
     if (matchsNumber === totalpairs - 1) {
       console.log("felicidades");
@@ -89,7 +91,7 @@ const MainGame1 = () => {
         <HomeButton />
         <div className="functions-container">
           <Counter matchsNumber={matchsNumber} totalpairs={totalpairs} />
-          {/* <PlayAgainBtn playAgain={playAgain} /> */}
+          <PlayAgainBtn playAgain={playAgain} />
         </div>
         <Cards
           characters={deckDisposal}

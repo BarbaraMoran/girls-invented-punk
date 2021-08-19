@@ -2,6 +2,7 @@ import React from "react";
 import videoMix from "../../images/mix.mp4";
 import videoMix2 from "../../images/background.mp4";
 import poster from "../../images/poster.png";
+import poster2 from "../../images/poster2.png";
 import MainPioneers from "../Pioneers/MainPioneers";
 import MainGame1 from "../one-player/MainGame1";
 import Footer from "./Footer";
@@ -49,7 +50,13 @@ const Landing = () => {
         >
           <source src={videoMix} type="video/mp4" />
         </video>
-        <video className="header__background-min" autoPlay muted loop>
+        <video
+          className="header__background-min"
+          autoPlay
+          muted
+          loop
+          poster={poster2}
+        >
           <source src={videoMix2} type="video/mp4" />
         </video>
       </header>
