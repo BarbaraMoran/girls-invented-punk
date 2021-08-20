@@ -12,6 +12,7 @@ const Cards = (props) => {
         getCardInfo={props.getCardInfo}
         unflippedCards={props.unflippedCards}
         resolvedCards={props.resolvedCards}
+        initialPosition={props.initialPosition}
       />
     );
   });

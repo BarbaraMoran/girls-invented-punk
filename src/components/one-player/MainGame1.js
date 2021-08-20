@@ -7,14 +7,27 @@ import charactersData from "../../data/onePlayerData.json";
 import PlayAgainBtn from "./PlayAgainBtn";
 
 const MainGame1 = () => {
+  //array de artistas con orden random
   const [deckDisposal, setDeckDisposal] = useState([]);
+  //primera carta escogida
   const [cardSelection1, setCardSelection1] = useState({});
+  //segunda carta escogida
   const [cardSelection2, setCardSelection2] = useState({});
+  //últimas cartas resueltas
   const [resolvedCards, setResolvedCards] = useState([]);
+  //cartas levantadas que se vuelven a cubrir por no ser match
   const [unflippedCards, setUnflippedCards] = useState([]);
+  //número de parejas conseguidas
   const [matchsNumber, setMatchsNumber] = useState(0);
+  //reset de las cartas
+  const [initialPosition, setInitialPosition] = useState(false);
+
+  console.log(cardSelection1);
+  console.log(cardSelection2);
+  console.log(unflippedCards);
 
   useEffect(() => {
+    //barajar
     charactersData.sort(function () {
       return 0.5 - Math.random();
     });
@@ -22,22 +35,15 @@ const MainGame1 = () => {
   }, []);
 
   useEffect(() => {
+    //verificar si ha habido match
     checkMatch();
   }, [cardSelection2]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  const playAgain = () => {
-    charactersData.sort(function () {
-      return 0.5 - Math.random();
-    });
-
-    setDeckDisposal(charactersData);
-    setMatchsNumber(0);
-  };
-
+  //recoger valores de cartas levantadas y verificar
   const getCardInfo = (name, index) => {
     if (cardSelection1.name === name && cardSelection1.index === index) {
       return 0;
-      //estoy dando la vuelta a la misma carta
+      //estoy pinchando en la misma carta que ya he levantado
     }
 
     if (!cardSelection1.name) {
@@ -46,23 +52,28 @@ const MainGame1 = () => {
       setCardSelection2({ name, index });
     }
     return 1;
+    //guardar valores. Levantar carta seleccionada.
   };
 
   console.log(deckDisposal);
 
+  //comparar valores y ver si hay match
   const checkMatch = () => {
     if (cardSelection1.name && cardSelection2.name) {
       const match = cardSelection1.name === cardSelection2.name;
+      //si hay, bloquear cartas. Si no, volver a girarlas.
       match ? resolveCards() : unflipCards();
     }
   };
 
   const resolveCards = () => {
+    //actualizar con cartas del último match, borrar selección y añadir puntos
     setResolvedCards([cardSelection1.index, cardSelection2.index]);
     resetCardSelection();
     addMatch();
   };
 
+  //en caso de no match, guardar cartas no acertadas en el estado unflipped y borrar selección
   const unflipCards = () => {
     setUnflippedCards([cardSelection1.index, cardSelection2.index]);
     resetCardSelection();
@@ -78,11 +89,33 @@ const MainGame1 = () => {
     checkEndOfTheGame();
   };
 
+  //verificar si ha terminado el juego
   const totalpairs = charactersData.length / 2;
   const checkEndOfTheGame = () => {
     if (matchsNumber === totalpairs - 1) {
       console.log("felicidades");
     }
+  };
+
+  //jugar de nuevo
+  const playAgain = () => {
+    setInitialPosition(!initialPosition);
+
+    setCardSelection1({});
+    setCardSelection2({});
+    setResolvedCards([]);
+    setUnflippedCards([]);
+
+    setMatchsNumber(0);
+    mixCards();
+  };
+
+  //barajar
+  const mixCards = () => {
+    charactersData.sort(function () {
+      return 0.5 - Math.random();
+    });
+    setDeckDisposal(charactersData);
   };
 
   return (
@@ -98,6 +131,7 @@ const MainGame1 = () => {
           getCardInfo={getCardInfo}
           unflippedCards={unflippedCards}
           resolvedCards={resolvedCards}
+          initialPosition={initialPosition}
         />
       </section>
     </>

@@ -16,21 +16,25 @@
         width: 100%;
         display: flex;
         justify-content: space-around;
-        position: absolute;
-        bottom: 1%;
 
         @media all and(min-width: 600px) {
-            bottom: 5%;
-
+         margin-bottom: 30px;
         }
 
-        @media all and(min-width: 1400px) {
-            bottom: 10%;
 
+        @media all and(min-width: 900px) {
+         margin-bottom: 9px;
         }
+
+        @media all and(min-width: 1600px) {
+         margin-bottom: 30px;
+        }
+
+    
+
     }
 
-
-
 }
+
+
 

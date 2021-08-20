@@ -7,18 +7,27 @@ const Card = (props) => {
   const [isFlipped, setIsFlipped] = useState(false);
   const [hasEvent, setHasEvent] = useState(true);
 
+  //volver a cubrir las cartas erradas tras x segundos
   useEffect(() => {
     if (props.unflippedCards.includes(props.index)) {
       setTimeout(() => setIsFlipped(false), 1400);
     }
   }, [props.unflippedCards]); // eslint-disable-line react-hooks/exhaustive-deps
 
+  //cada vez que haya match, bloquear evento en esas cartas
   useEffect(() => {
     if (props.resolvedCards.includes(props.index)) {
       setHasEvent(false);
     }
   }, [props.resolvedCards]); // eslint-disable-line react-hooks/exhaustive-deps
 
+  //
+  useEffect(() => {
+    setIsFlipped(false);
+    setHasEvent(true);
+  }, [props.initialPosition]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  //descubrimos la carta escogida
   const handleCard = (event) => {
     const result = props.getCardInfo(props.name, props.index);
 
