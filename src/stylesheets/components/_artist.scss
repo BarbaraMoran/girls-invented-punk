@@ -59,7 +59,7 @@
             border-radius: 22px;
             padding: 10px;            
             border: black solid 2px;
-            background-color: rgba(255, 255, 255, 0.835);
+            background-color: rgb(255, 255, 255);
             box-shadow: 1px 1px 5px #666;
 
             @media all and(min-width: 370px) {
@@ -90,6 +90,20 @@
             }
     
 
+        }
+
+        .article__text:hover {
+
+            @media all and(min-width: 400px) {
+                transform: scale(125%) translateY(-10%);
+
+            }
+
+            @media all and(min-width: 800px) {
+                transform: scale(150%) translateY(-10%);
+
+            }
+            
         }
 
       
