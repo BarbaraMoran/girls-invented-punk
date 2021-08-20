@@ -6,7 +6,7 @@ import Counter from "./Counter";
 import charactersData from "../../data/onePlayerData.json";
 import PlayAgainBtn from "./PlayAgainBtn";
 
-const MainGame1 = () => {
+const Game = () => {
   //array de artistas con orden random
   const [deckDisposal, setDeckDisposal] = useState([]);
   //primera carta escogida
@@ -21,10 +21,6 @@ const MainGame1 = () => {
   const [matchsNumber, setMatchsNumber] = useState(0);
   //reset de las cartas
   const [initialPosition, setInitialPosition] = useState(false);
-
-  console.log(cardSelection1);
-  console.log(cardSelection2);
-  console.log(unflippedCards);
 
   useEffect(() => {
     //barajar
@@ -105,8 +101,8 @@ const MainGame1 = () => {
     setCardSelection2({});
     setResolvedCards([]);
     setUnflippedCards([]);
-
     setMatchsNumber(0);
+
     mixCards();
   };
 
@@ -138,4 +134,4 @@ const MainGame1 = () => {
   );
 };
 
-export default MainGame1;
+export default Game;

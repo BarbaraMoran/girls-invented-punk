@@ -10,7 +10,7 @@ const Card = (props) => {
   //volver a cubrir las cartas erradas tras x segundos
   useEffect(() => {
     if (props.unflippedCards.includes(props.index)) {
-      setTimeout(() => setIsFlipped(false), 1400);
+      setTimeout(() => setIsFlipped(false), 1200);
     }
   }, [props.unflippedCards]); // eslint-disable-line react-hooks/exhaustive-deps
 
