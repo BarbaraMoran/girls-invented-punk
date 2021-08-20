@@ -122,13 +122,15 @@ const Game = () => {
           <Counter matchsNumber={matchsNumber} totalpairs={totalpairs} />
           <PlayAgainBtn playAgain={playAgain} />
         </div>
-        <Cards
-          characters={deckDisposal}
-          getCardInfo={getCardInfo}
-          unflippedCards={unflippedCards}
-          resolvedCards={resolvedCards}
-          initialPosition={initialPosition}
-        />
+        <div className="cardlist__container">
+          <Cards
+            characters={deckDisposal}
+            getCardInfo={getCardInfo}
+            unflippedCards={unflippedCards}
+            resolvedCards={resolvedCards}
+            initialPosition={initialPosition}
+          />
+        </div>
       </section>
     </>
   );
