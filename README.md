@@ -126,16 +126,18 @@ Project Link: [https://github.com/BarbaraMoran/girls-invented-punk](https://gith
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [Kevin Urgiles](https://www.youtube.com/watch?v=OpZEIxqQfIs)
-* [BorjaScript](https://www.youtube.com/watch?v=bSX3_oGrZSs)
-* [GitHub Pages](https://pages.github.com)
 * [Animate.css](https://animate.style/)
+* [Adobe Fonts](https://fonts.adobe.com/)
+* [Be Funky](https://www.befunky.com/es/)
+* [Best Readme Template](https://github.com/othneildrew/Best-README-Template)
+* [BorjaScript](https://www.youtube.com/watch?v=bSX3_oGrZSs)
+* [Font Awesome](https://fontawesome.com)
+* [Google Fonts](https://fonts.google.com/)
+* [GitHub Pages](https://pages.github.com)
+* [J&G Proyectos Web](https://www.youtube.com/watch?v=tI3Gfn8affA)
+* [Kevin Urgiles](https://www.youtube.com/watch?v=OpZEIxqQfIs)
 * [MDB Carousel](https://mdbootstrap.com/docs/react/advanced/carousel/)
 * [react-card-flip](https://www.npmjs.com/package/react-card-flip)
-* [Google Fonts](https://fonts.google.com/)
-* [Adobe Fonts](https://fonts.adobe.com/)
-* [Font Awesome](https://fontawesome.com)
-* [Be Funky](https://www.befunky.com/es/)
 * [Wikipedia](https://es.wikipedia.org/wiki/Wikipedia:Portada)
-* [Best Readme Template](https://github.com/othneildrew/Best-README-Template)
+
 
