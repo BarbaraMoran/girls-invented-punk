@@ -4,7 +4,7 @@ const Counter = (props) => {
   return (
     <>
       <h5 className="counter">
-        {props.matchsNumber} / {props.totalpairs} matches
+        {props.matchsNumber}/ {props.totalpairs} matches
       </h5>
     </>
   );

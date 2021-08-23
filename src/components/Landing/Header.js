@@ -3,12 +3,18 @@ import videoMix from "../../images/mix.mp4";
 import videoMix2 from "../../images/background.mp4";
 import poster from "../../images/poster.png";
 import poster2 from "../../images/poster2.png";
+import "animate.css";
 
 const Header = () => {
   return (
     <header className="header" id="home">
       <div className="header__container">
-        <h1 className="title">Girls invented Punk not England</h1>
+        <h1 className="title animate__animated animate__fadeIn animate__delay-0.5s">
+          Girls invented Punk
+        </h1>
+        <h2 className="title animate__animated animate__fadeIn animate__delay-1s">
+          not England
+        </h2>
         <nav className="nav">
           <ul className="nav__list">
             <li className="nav__item">

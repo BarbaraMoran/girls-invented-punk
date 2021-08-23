@@ -22,7 +22,7 @@ const Game = () => {
   //reset de las cartas
   const [initialPosition, setInitialPosition] = useState(false);
   //modal
-  const [active, setActive] = useState(true);
+  const [active, setActive] = useState(false);
 
   useEffect(() => {
     //barajar
