@@ -1,22 +1,14 @@
 .play-again {
-    font-size: 14px;
+    font-size: 20px;
     font-family: $fontfamily;
-    color: black;
+    color: $main-color;
     cursor: pointer;
+    margin-bottom: 40px;
   
-    
-
-    @media all and(min-width: 400px) {
-        font-size: 20px;
-    }
-    @media all and(min-width: 700px) {
-        font-size: 30px;
-
-    }
 
 }
 
 .play-again:hover {
-    color: $main-color2;
+    color: black;
 font-weight: bold;
 }

@@ -1,10 +1,11 @@
 import React from "react";
 import Portal from "../Portal";
 import twitterBtn from "../../images/share-twitter.png";
+import PlayAgainBtn from "./PlayAgainBtn";
 
 export default class Modal extends React.Component {
   render() {
-    const { toggle, active } = this.props;
+    const { playAgain, toggle, active } = this.props;
 
     return (
       <Portal>
@@ -17,6 +18,7 @@ export default class Modal extends React.Component {
               <div>
                 <h4>🎉HEY! You did it!🥳</h4>
                 <p>🧠Playing this game is an excellent training.</p>
+                <PlayAgainBtn playAgain={playAgain} />
                 <a
                   target="_blank"
                   class="twitter-share"
@@ -63,7 +65,7 @@ const styles = {
     border: "black solid 3px",
     backgroundColor: "rgb(255, 255, 255)",
     fontFamily: "'Manrope', sans-serif",
-    fontSize: "18px",
+    fontSize: "15px",
     textAlign: "center",
   },
 

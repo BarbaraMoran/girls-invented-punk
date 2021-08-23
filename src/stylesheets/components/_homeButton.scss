@@ -14,6 +14,8 @@
 
 .home-button:hover {
     transform: scale(125%);
+    transition: transform ease 0.5s;
+
 }
 
 .game__section .home-button {

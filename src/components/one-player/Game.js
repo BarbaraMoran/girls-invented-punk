@@ -3,9 +3,8 @@ import { useState, useEffect } from "react";
 import Cards from "./Cards";
 import HomeButton from "../HomeButton";
 import Counter from "./Counter";
-import charactersData from "../../data/onePlayerData.json";
-import PlayAgainBtn from "./PlayAgainBtn";
 import Modal from "./Modal";
+import charactersData from "../../data/onePlayerData.json";
 
 const Game = () => {
   //array de artistas con orden random
@@ -23,7 +22,7 @@ const Game = () => {
   //reset de las cartas
   const [initialPosition, setInitialPosition] = useState(false);
   //modal
-  const [active, setActive] = useState(false);
+  const [active, setActive] = useState(true);
 
   useEffect(() => {
     //barajar
@@ -107,6 +106,7 @@ const Game = () => {
     setMatchsNumber(0);
 
     mixCards();
+    toggle();
   };
 
   //barajar
@@ -117,7 +117,7 @@ const Game = () => {
     setDeckDisposal(charactersData);
   };
 
-  //modal
+  //cerrar modal
   const toggle = () => {
     setActive(!active);
   };
@@ -128,8 +128,7 @@ const Game = () => {
         <HomeButton />
         <div className="functions-container">
           <Counter matchsNumber={matchsNumber} totalpairs={totalpairs} />
-          <PlayAgainBtn playAgain={playAgain} />
-          <Modal active={active} toggle={toggle} />
+          <Modal active={active} toggle={toggle} playAgain={playAgain} />
         </div>
         <div className="cardlist__container">
           <Cards
