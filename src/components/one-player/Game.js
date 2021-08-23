@@ -5,6 +5,7 @@ import HomeButton from "../HomeButton";
 import Counter from "./Counter";
 import charactersData from "../../data/onePlayerData.json";
 import PlayAgainBtn from "./PlayAgainBtn";
+import Modal from "./Modal";
 
 const Game = () => {
   //array de artistas con orden random
@@ -21,6 +22,8 @@ const Game = () => {
   const [matchsNumber, setMatchsNumber] = useState(0);
   //reset de las cartas
   const [initialPosition, setInitialPosition] = useState(false);
+  //modal
+  const [active, setActive] = useState(false);
 
   useEffect(() => {
     //barajar
@@ -89,7 +92,7 @@ const Game = () => {
   const totalpairs = charactersData.length / 2;
   const checkEndOfTheGame = () => {
     if (matchsNumber === totalpairs - 1) {
-      console.log("felicidades");
+      setActive(true);
     }
   };
 
@@ -114,6 +117,11 @@ const Game = () => {
     setDeckDisposal(charactersData);
   };
 
+  //modal
+  const toggle = () => {
+    setActive(!active);
+  };
+
   return (
     <>
       <section className="game__section" id="game">
@@ -121,6 +129,7 @@ const Game = () => {
         <div className="functions-container">
           <Counter matchsNumber={matchsNumber} totalpairs={totalpairs} />
           <PlayAgainBtn playAgain={playAgain} />
+          <Modal active={active} toggle={toggle} />
         </div>
         <div className="cardlist__container">
           <Cards

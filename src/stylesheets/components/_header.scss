@@ -102,6 +102,7 @@
     
             .nav__item:hover {
                 transform: scale(110%);
+                transition: transform ease 0.5s;
                 border: solid black;
             }
     
