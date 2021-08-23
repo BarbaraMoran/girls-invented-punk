@@ -7,12 +7,10 @@
         font-family: $fontfamily;
 
         .article__name {
-            color: black;
+            color: $text-color;
             font-size: 17px;
             margin-bottom: 15px;
-            //width: 220px;
             text-align: center;
-            //height: 40px;
             padding: 10px;
             background-color:$main-color;
             box-shadow: 1px 1px 5px #666;
@@ -20,20 +18,14 @@
 
             @media all and(min-width: 450px) {
                 font-size: 20px;
-                //height: 40px;
                 padding: 10px;
-                //width: 250px;
 
             }
             @media all and(min-width: 580px) {
                 font-size: 25px;
-                //eight: 50px;
-                //width: 380px;
                 border: solid black 3px;
 
-
             }
-
 
         }
 
@@ -62,18 +54,15 @@
             background-color: rgb(255, 255, 255);
             box-shadow: 1px 1px 5px #666;
             
-
             @media all and(min-width: 370px) {
                 font-size: 16px;
                 border: black solid 2px;
-
 
             }
 
             @media all and(min-width: 580px){
                 font-size: 18px;
                 border: black solid 3px;
-
             }
 
             .article__info {
@@ -87,10 +76,8 @@
             .article__link {
                 color: $main-color;
                 font-weight: bold;
-               
             }
     
-
         }
 
         .article__text:hover {
@@ -99,14 +86,11 @@
                 transform: scale(125%) translateY(-10%);
                 transition: transform ease 0.5s;
 
-
             }
             
         }
-
       
     }
-
 
 }
     

@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import Cards from "./Cards";
-import HomeButton from "../HomeButton";
+import HomeButton from "../landing/HomeButton";
 import Counter from "./Counter";
 import Modal from "./Modal";
 import charactersData from "../../data/onePlayerData.json";

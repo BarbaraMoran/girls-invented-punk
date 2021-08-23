@@ -1,6 +1,6 @@
 import React from "react";
 import "../stylesheets/App.scss";
-import Landing from "./Landing/Landing";
+import Landing from "./landing/Landing";
 
 const App = () => {
   return <Landing></Landing>;

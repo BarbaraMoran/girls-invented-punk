@@ -1,6 +1,6 @@
 import React from "react";
 import List from "./List";
-import HomeButton from "../HomeButton";
+import HomeButton from "../landing/HomeButton";
 import pioneersData from "../../data/pioneersData.json";
 
 const MainPioneers = () => {
