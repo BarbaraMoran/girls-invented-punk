@@ -1,5 +1,5 @@
 # Girls Invented Punk
-Original Female Punk Pioneers educational site. It contains info about 34 artists, a 30 cards memory game and a Spotify Playlist.<br>
+Original Female Punk Pioneers educational site. It contains info about 34 artists,30 cards memory game and Spotify Playlist.<br>
  ✨Responsive (mobile first)<br>
  
 **React, JS, CSS (SASS), HTML5, MD Bootstrap, npm**
