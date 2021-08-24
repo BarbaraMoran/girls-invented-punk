@@ -93,9 +93,13 @@ You will have to install node <br>
 ### Installation
 
 1. Download the repo and open it in your code editor.
-3. Install NPM packages
+2. Install NPM packages
    ```sh
    npm install
+   ```
+ 3. Start Project and Open in the browser
+   ```sh
+   npm start
    ```
 
 <!-- USAGE EXAMPLES -->
