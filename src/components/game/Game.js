@@ -53,8 +53,6 @@ const Game = () => {
     //guardar valores. Levantar carta seleccionada.
   };
 
-  console.log(deckDisposal);
-
   //comparar valores y ver si hay match
   const checkMatch = () => {
     if (cardSelection1.name && cardSelection2.name) {

@@ -13,7 +13,7 @@ export default class Modal extends React.Component {
           <div style={styles.wrapper}>
             <div style={styles.window}>
               <button style={styles.closeBtn} onClick={toggle}>
-                x
+                X
               </button>
               <div>
                 <h4>🎉HEY! You did it!🥳</h4>
@@ -21,8 +21,9 @@ export default class Modal extends React.Component {
                 <PlayAgainBtn playAgain={playAgain} />
                 <a
                   target="_blank"
+                  rel="noreferrer"
                   class="twitter-share"
-                  href="https://twitter.com/intent/tweet?url=https://barbaramoran.github.io/girls-invented-punk/#/"
+                  href="https://twitter.com/intent/tweet?text=🎉I've%20finished%20'Girls%20Invented%20Punk'%20Memory%20Game!%20Play%20and%20learn%20about%20them.&url=https://bit.ly/3B4TpKC"
                 >
                   <img src={twitterBtn} alt="twitter-share"></img>
                 </a>
@@ -56,7 +57,7 @@ const styles = {
     borderTopLeftRadius: "22px",
     boxShadow: "1px 1px 5px #666",
     zIndex: "10",
-    minWidth: "300px",
+    minWidth: "320px",
     minHeight: "200px",
     display: "flex",
     flexDirection: "column",

@@ -7,29 +7,39 @@ const Card = (props) => {
   const [isFlipped, setIsFlipped] = useState(false);
   const [hasEvent, setHasEvent] = useState(true);
 
+  const {
+    index,
+    name,
+    picture,
+    getCardInfo,
+    unflippedCards,
+    resolvedCards,
+    initialPosition,
+  } = props;
+
   //volver a cubrir las cartas erradas tras x segundos
   useEffect(() => {
-    if (props.unflippedCards.includes(props.index)) {
+    if (unflippedCards.includes(index)) {
       setTimeout(() => setIsFlipped(false), 1200);
     }
-  }, [props.unflippedCards]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [unflippedCards]); // eslint-disable-line react-hooks/exhaustive-deps
 
   //cada vez que haya match, bloquear evento en esas cartas
   useEffect(() => {
-    if (props.resolvedCards.includes(props.index)) {
+    if (resolvedCards.includes(index)) {
       setHasEvent(false);
     }
-  }, [props.resolvedCards]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [resolvedCards]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  //
+  //cada vez que acabe el juego, las cartas vuelven a su pos.inicial
   useEffect(() => {
     setIsFlipped(false);
     setHasEvent(true);
-  }, [props.initialPosition]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [initialPosition]); // eslint-disable-line react-hooks/exhaustive-deps
 
   //descubrimos la carta escogida
   const handleCard = (event) => {
-    const result = props.getCardInfo(props.name, props.index);
+    const result = getCardInfo(name, index);
 
     if (result !== 0) {
       setIsFlipped(!isFlipped);
@@ -38,23 +48,23 @@ const Card = (props) => {
 
   return (
     <>
-      <li key={props.index} className="list__item">
+      <li key={index} className="list__item">
         <ReactCardFlip isFlipped={isFlipped}>
           <img
             className="item__picture back-deck"
             alt="back deck decoration"
             src={backDeck}
             onClick={hasEvent ? handleCard : null}
-            data-name={props.name}
-            data-index={props.index}
+            data-name={name}
+            data-index={index}
           />
           <img
             className="item__picture"
-            alt={props.name}
-            title={props.name}
-            src={props.picture}
-            data-name={props.name}
-            data-index={props.index}
+            alt={name}
+            title={name}
+            src={picture}
+            data-name={name}
+            data-index={index}
             onClick={hasEvent ? handleCard : null}
           />
         </ReactCardFlip>
